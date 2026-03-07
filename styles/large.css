@@ -1,0 +1,139 @@
+:root {
+    --header-font-family: "Merriweather", serif;
+    --body-font-family: "Gideon Roman", serif;
+
+    --text-color-primary: #142252;
+    /* --great-lines-color-accent: yellow; */
+    --background-card: #f5e0e0;
+    --lines-text-color: #ffffff;
+
+    --color-primary-dark: #1E3A8A;
+    --color-primary-light: #3B82F6;
+
+    --color-secondary-dark: #5B21B6;
+    --color-secondary-light: #A78BFA;
+    --color-secondary: #7C3AED;
+
+    --hover-color-accent: #F97316;
+
+
+    --text-on-great-line: black;
+    --color-accent-light: #FDBA74;
+    --color-accent-dark: #C2410C;
+
+    --color-text-primary: #374151;
+    --color-text-secondary: #6B7280;
+    --color-text-light: #9CA3AF;
+
+    --header-text-color-bg-main: #F9FAFB;
+    --color-bg-section: #FFFFFF;
+    --main-text-color-bg-dark: #111827;
+
+    --main-background-color-border: #E5E7EB;
+    --shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+    --one_padding: 1rem;
+    --one_gap: 1rem;
+    --flex-display: flex;
+    --cursor-pointer: pointer;
+    --grid-display: grid;
+
+    --eight_border_radius: 8px;
+    --one_margin: 1rem;
+}
+
+@media only screen and (min-width:38rem) {
+    header {
+        border: none;
+    }
+
+    .head-sep {
+        span {
+            font-size: 1rem;
+        }
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    .navigation1 {
+        display: var(--flex-display);
+        flex-direction: row;
+        margin: 0rem .4rem 0rem .4rem;
+        padding: 1px;
+
+        li {
+            a {
+                font-size: smaller;
+            }
+        }
+
+        li.current {
+            margin-left: 1px;
+        }
+
+    }
+
+    main {
+        h1 {
+            margin-left: .4rem;
+        }
+
+        .about {
+            display: var(--grid-display);
+            grid-template-columns: auto 15rem;
+
+            .about-me {
+
+                p {
+                    height: 88.4%;
+
+                }
+            }
+        }
+
+        .grid-courses {
+
+            .g-grid {
+                display: var(--flex-display);
+                flex-direction: row;
+                justify-content: space-between;
+                column-gap: .5rem;
+
+                p {
+                    width: 100%;
+                    padding: .1rem;
+                }
+            }
+
+            .f-grid {
+
+                p {
+                    padding: .2rem;
+                }
+            }
+        }
+    }
+
+    footer {
+        .social {
+            ul {
+                a {
+                    width: 50px;
+                    height: 50px;
+                    img {
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+                
+                
+            }
+        }
+    }
+}
