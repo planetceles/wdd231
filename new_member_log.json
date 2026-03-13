@@ -1,0 +1,23 @@
+{
+    "family_name": "Mande",
+    "date_moved_in": "2023-05-22",
+    "number_of_people": 15,
+    "is_visited_by_bishopric": false,
+    "family_members": [
+        {
+            "name": "Celeste",
+            "gender": "Male",
+            "birthdate": "1997-09-26"
+        },
+        {
+            "name": "Sylvie",
+            "gender": "Female",
+            "birthdate": "1999-06-24"
+        },
+        {
+            "name": "Mathew",
+            "gender": "Male",
+            "birthdate": "2003-08-08"
+        }
+    ]
+}
