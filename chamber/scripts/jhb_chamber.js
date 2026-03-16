@@ -39,7 +39,7 @@ const displayMembers = (members) => {
 
         fullName.textContent = `${member.name} ${member.lastname}`;
         phone.textContent = `Phone Number: ${member.phone}`;
-        website.textContent = `Website: ${member.website}`;
+        website.innerHTML = `Website: <a href="${member.website}" target="_blank">${member.website}</a>`;
         portrait.setAttribute("src", member.imageurl);
         portrait.setAttribute("alt", `${member.name}`);
         portrait.setAttribute("loading", "lazy");

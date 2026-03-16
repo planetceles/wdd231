@@ -264,6 +264,10 @@ main {
             width: 350px;
             text-align: var(--text-align);
 
+            a {
+                text-decoration: var(--text-decoration-none);
+            }
+
             img {
                 /* border: 2px solid black; */
                 width: 120px;
