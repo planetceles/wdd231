@@ -1,0 +1,123 @@
+:root {
+    --header-font-family: "Merriweather", serif;
+    --body-font-family: "Gideon Roman", serif;
+
+    --primary-color-primary: #142252;
+    --hover-background-card: #f5e0e0;
+    --white-color: #ffffff;
+    --black-color: black;
+
+    --color-primary-dark: #1E3A8A;
+    --color-primary-light: #3B82F6;
+
+    --one_padding: 1rem;
+    --one_gap: 1rem;
+    --flex-display: flex;
+    --cursor-pointer: pointer;
+    --grid-display: grid;
+
+    --eight_border_radius: 8px;
+    --one_margin: 1rem;
+
+    --flex-direction: column;
+    --row-direction: row;
+    --list-style: none;
+    --four-padding: .4rem;
+    --text-decoration-none: none;
+    --center-align-items: center;
+    --display-block: block;
+    --display-none: none;
+    --left-margin: .5rem;
+    --text-align: center;
+}
+@media only screen and (min-width:38rem) {
+    header {
+        display: var(--flex-display);
+        justify-content: space-around;
+        align-items: var(--center-align-items);
+        .mode {
+            .l-mode {
+                display: none;
+            }
+            .hamburger {
+                display: none;
+            }
+        }
+        .navigation {
+            display: block;
+
+            ul {
+                display: var(--flex-display);
+                flex-direction: row;
+
+                li {
+                    a {
+                        display: block;
+                        border: none;
+                    }
+                }
+            }
+        }
+    }
+    main {
+        .hero {
+            display: var(--flex-display);
+            width: 40rem;
+            margin: 0 auto;
+
+            .hero-button {
+                top: 70%;
+                left: 70%;
+            }
+        }
+        h1 {
+            margin-left: 6.3rem;
+            padding: .5rem 0rem .2rem 0rem;
+        }
+        .all-events {
+            display: var(--grid-display);
+            grid-template-columns: auto 350px 300px;
+            column-gap: .5rem;
+            width: 39.2rem;
+            margin: 0 auto;
+
+            h2 {
+                text-align: left;
+            }
+        }
+        .all-business {
+            display: var(--flex-display);
+            flex-wrap: wrap;
+            column-gap: .4rem;
+            width: 39.2rem;
+            margin: 0 auto;
+
+            .business {
+                margin: .5rem 0rem .3rem 0rem;
+            }
+        }
+    }
+    footer {
+        display: var(--flex-display);
+        justify-content: space-around;
+        align-items: var(--center-align-items);
+
+        .social {
+            padding: 0;
+
+            ul {
+                column-gap: .9rem;
+
+                li {
+                    a {
+                        img {
+                            width: 44px;
+                            height: 44px;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
