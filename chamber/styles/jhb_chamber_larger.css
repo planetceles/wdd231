@@ -74,10 +74,13 @@
             }
         }
         h1 {
-            width: 100%;
+            /* width: 39.2rem; */
             max-width: 1023px;
-            margin-left: 6.3rem;
+            /* max-width: 1023px; */
+            /* margin-left: 6.3rem; */
+            margin: 0 auto;
             padding: .5rem 0rem .2rem 0rem;
+
         }
         .all-events {
             display: var(--grid-display);
