@@ -74,6 +74,8 @@
             }
         }
         h1 {
+            width: 100%;
+            max-width: 1023px;
             margin-left: 6.3rem;
             padding: .5rem 0rem .2rem 0rem;
         }
