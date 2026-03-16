@@ -180,7 +180,7 @@ main {
         }
     }
 
-    h1 {
+    h1, h2 {
         padding-left: var(--four-padding);
     }
 
@@ -250,6 +250,28 @@ main {
                 column-gap: .5rem;
             }
             
+        }
+    }
+    .member {
+        /* background-color: red; */
+        display: var(--flex-display);
+        flex-direction: column;
+        align-items: var(--center-align-items);
+        .member-card {
+            background-color: var(--hover-background-card);
+            border: 1px solid #84f5ca;
+            margin: .3rem;
+            width: 350px;
+            text-align: var(--text-align);
+
+            img {
+                /* border: 2px solid black; */
+                width: 120px;
+                height: auto;
+                object-fit: cover;
+                border-radius: 10px;
+                
+            }
         }
     }
 }

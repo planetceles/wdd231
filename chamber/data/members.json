@@ -7,7 +7,8 @@
             "phone": "254-421-568",
             "membership": "Gold",
             "website": "https//...",
-            "imageurl": "https://planetceles.github.io/wdd231/images/thecelestin.jpg"
+            "imageurl": "https://planetceles.github.io/wdd231/images/thecelestin.jpg",
+            "isactive": true
         },
         {
             "name": "Celestin",
@@ -16,7 +17,8 @@
             "phone": "254-421-568",
             "membership": "Gold",
             "website": "https//...",
-            "imageurl": "https://planetceles.github.io/wdd231/images/thecelestin.jpg"
+            "imageurl": "https://planetceles.github.io/wdd231/images/thecelestin.jpg",
+            "isactive": true
         },
         {
             "name": "Celestin",
@@ -25,7 +27,8 @@
             "phone": "254-421-568",
             "membership": "Gold",
             "website": "https//...",
-            "imageurl": "https://planetceles.github.io/wdd231/images/thecelestin.jpg"
+            "imageurl": "https://planetceles.github.io/wdd231/images/thecelestin.jpg",
+            "isactive": true
         },
         {
             "name": "Celestin",
@@ -34,7 +37,8 @@
             "phone": "254-421-568",
             "membership": "Gold",
             "website": "https//...",
-            "imageurl": "https://planetceles.github.io/wdd231/images/thecelestin.jpg"
+            "imageurl": "https://planetceles.github.io/wdd231/images/thecelestin.jpg",
+            "isactive": true
         },
         {
             "name": "Celestin",
@@ -43,7 +47,8 @@
             "phone": "254-421-568",
             "membership": "Gold",
             "website": "https//...",
-            "imageurl": "https://planetceles.github.io/wdd231/images/thecelestin.jpg"
+            "imageurl": "https://planetceles.github.io/wdd231/images/thecelestin.jpg",
+            "isactive": true
         },
         {
             "name": "Celestin",
@@ -52,7 +57,8 @@
             "phone": "254-421-568",
             "membership": "Gold",
             "website": "https//...",
-            "imageurl": "https://planetceles.github.io/wdd231/images/thecelestin.jpg"
+            "imageurl": "https://planetceles.github.io/wdd231/images/thecelestin.jpg",
+            "isactive": true
         },
         {
             "name": "Celestin",
@@ -61,7 +67,8 @@
             "phone": "254-421-568",
             "membership": "Gold",
             "website": "https//...",
-            "imageurl": "https://planetceles.github.io/wdd231/images/thecelestin.jpg"
+            "imageurl": "https://planetceles.github.io/wdd231/images/thecelestin.jpg",
+            "isactive": true
         }
     ]
 }
