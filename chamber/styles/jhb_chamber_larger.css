@@ -62,7 +62,8 @@
     main {
         .hero {
             display: var(--flex-display);
-            width: 40rem;
+            /* width: 40rem; */
+            max-width: 40rem;
             margin: 0 auto;
 
             .hero-button {
