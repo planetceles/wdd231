@@ -1,0 +1,64 @@
+[
+    {
+        "name": "Sicaf South Africa",
+        "address": "Rifle Range, Johannesburg",
+        "location": {
+            "city": "Johannsburg",
+            "province": "Gauteng"
+        },
+        "phone": "254-545-658",
+        "email": "sicaf@sicaf.org",
+        "website": "sicaft.sc.org",
+        "membershipLevel": "Premium",
+        "industry": "Cars",
+        "description": "Selling cars and hiring drivers",
+        "services": [
+            "Cars",
+            "Driving",
+            "Umployment"
+        ],
+        "image": "xxxxxxxxxxxxx",
+        "socialMedia": {
+            "facebook": "sicaf",
+            "linkedin": "sicaf",
+            "instagram": "sicaf"
+        },
+        "tags": [
+            "Cars"
+        ],
+        "isActive": true,
+        "featured": true,
+        "joinDate": "2026-03-17",
+        "lastUpdated": "2026-03-17"
+    },
+    {
+        "name": "g's",
+        "address": "fsdfg",
+        "location": {
+            "city": "sfg",
+            "province": "sdfg"
+        },
+        "phone": "sdf",
+        "email": "g",
+        "website": "sf",
+        "membershipLevel": "dfg",
+        "industry": "sdf",
+        "description": "sdf",
+        "services": [
+            "sdfg"
+        ],
+        "image": "sdfg",
+        "socialMedia": {
+            "facebook": "sdfg",
+            "linkedin": "",
+            "instagram": ""
+        },
+        "tags": [
+            "sdf"
+        ],
+        "isActive": false,
+        "featured": false,
+        "joinDate": "2026-03-17",
+        "lastUpdated": "2026-03-17"
+    }
+]

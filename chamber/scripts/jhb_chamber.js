@@ -33,12 +33,16 @@ const displayMembers = (members) => {
         let card = document.createElement("section");
         let fullName = document.createElement("h3");
         let phone = document.createElement("p");
+        let address = document.createElement("p");
+        let membership = document.createElement("p");
         let website = document.createElement("p");
         let portrait = document.createElement("img");
         card.classList.add("member-card");
 
         fullName.textContent = `${member.name} ${member.lastname}`;
         phone.textContent = `Phone Number: ${member.phone}`;
+        address.textContent = `Addresss: ${member.address}`;
+        membership.textContent = `Membership: ${member.membership}`;
         website.innerHTML = `Website: <a href="${member.website}" target="_blank">${member.website}</a>`;
         portrait.setAttribute("src", member.imageurl);
         portrait.setAttribute("alt", `${member.name}`);
@@ -48,7 +52,9 @@ const displayMembers = (members) => {
 
         card.appendChild(portrait);
         card.appendChild(fullName);
+        card.appendChild(address);
         card.appendChild(phone);
+        card.appendChild(membership);
         card.appendChild(website);
         
 
