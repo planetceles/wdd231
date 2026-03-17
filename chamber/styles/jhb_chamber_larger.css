@@ -29,31 +29,40 @@
     --display-none: none;
     --left-margin: .5rem;
     --text-align: center;
+
+    --border-none: none;
+    --hundred-width: 100%;
+    --zero-auto-margin: 0 auto;
+    --ten-three-max-width: 1023px;
+    --point-five-col-gap: .5rem;
+    --flex-wrap: wrap;
+    --justify-content-around: space-around;
+    --justify-content-between: space-between;
 }
 @media only screen and (min-width:38rem) {
     header {
         display: var(--flex-display);
-        justify-content: space-around;
+        justify-content: var(--justify-content-around);
         align-items: var(--center-align-items);
         .mode {
             .l-mode {
-                display: none;
+                display: var(--display-none);
             }
             .hamburger {
-                display: none;
+                display: var(--display-none);
             }
         }
         .navigation {
-            display: block;
+            display: var(--display-block);
 
             ul {
                 display: var(--flex-display);
-                flex-direction: row;
+                flex-direction: var(--row-direction);
 
                 li {
                     a {
-                        display: block;
-                        border: none;
+                        display: var(--display-block);
+                        border: var(--border-none);
                     }
                 }
             }
@@ -61,12 +70,9 @@
     }
     main {
         .hero {
-            /* display: var(--flex-display); */
-            /* width: 40rem; */
-            /* max-width: 40rem; */
-            width: 100%;
+            width: var(--hundred-width);
             max-width: 1050px;
-            margin: 0 auto;
+            margin: var(--zero-auto-margin);
 
             .hero-button {
                 top: 70%;
@@ -74,21 +80,18 @@
             }
         }
         h1 {
-            /* width: 39.2rem; */
-            max-width: 1023px;
-            /* max-width: 1023px; */
-            /* margin-left: 6.3rem; */
-            margin: 0 auto;
+            max-width: var(--ten-three-max-width);
+            margin: var(--zero-auto-margin);
             padding: .5rem 0rem .2rem 0rem;
 
         }
         .all-events {
             display: var(--grid-display);
             grid-template-columns: auto 350px 300px;
-            column-gap: .5rem;
-            width: 100%;
-            max-width: 1023px;
-            margin: 0 auto;
+            column-gap: var(--point-five-col-gap);
+            width: var(--hundred-width);
+            max-width: var(--ten-three-max-width);
+            margin: var(--zero-auto-margin);
 
             h2 {
                 text-align: left;
@@ -96,11 +99,11 @@
         }
         .all-business {
             display: var(--flex-display);
-            flex-wrap: wrap;
+            flex-wrap: var(--flex-wrap);
             column-gap: .4rem;
-            width: 100%;
-            max-width: 1023px;
-            margin: 0 auto;
+            width: var(--hundred-width);
+            max-width: var(--ten-three-max-width);
+            margin: var(--zero-auto-margin);
 
             .business {
                 margin: .5rem 0rem .3rem 0rem;
@@ -108,10 +111,8 @@
         }
         .member {
             background-color: re/d;
-            max-width: 1023px;
-            margin: 0 auto;
-            /* display: var(--flex-display); */
-            /* align-items: var(--center-align-items); */
+            max-width: var(--ten-three-max-width);
+            margin: var(--zero-auto-margin);
 
             .member-card {
                 width: 320px;
@@ -123,30 +124,18 @@
             }
         }
         #member {
-            /* border: 3px solid black; */
-            /* display: var(--grid-display); */
-            /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
-            /* gap: 1rem; */
-            /* column-gap: 1rem; */
             display: var(--flex-display);
-            flex-direction: row;
-            flex-wrap: wrap;
+            flex-direction: var(--row-direction);
+            flex-wrap: var(--flex-wrap);
         }
-        /* #member.list .member-card { */
-            /* display: var(--grid-display); */
-            /* grid-template-columns: 1fr 1fr 1fr; */
-        /* } */
         #member.list {
             display: var(--flex-display);
-            flex-direction: row;
+            flex-direction: var(--row-direction);
         }
         .members {
-            max-width: 1023px;
-            margin: 0 auto;
+            max-width: var(--ten-three-max-width);
+            margin: var(--zero-auto-margin);
             .buttons {
-                
-                /* width: 1023px;
-                margin: 0 auto; */
                 display: var(--flex-display);
                 justify-content: space-between;
                 align-items: var(--center-align-items);
@@ -163,7 +152,7 @@
     }
     footer {
         display: var(--flex-display);
-        justify-content: space-around;
+        justify-content: var(--justify-content-around);
         align-items: var(--center-align-items);
 
         .social {

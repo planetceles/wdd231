@@ -35,6 +35,21 @@
     --display-none: none;
     --left-margin: .5rem;
     --text-align: center;
+
+    --border-none: none;
+    --hundred-width: 100%;
+    --zero-auto-margin: 0 auto;
+    --ten-three-max-width: 1023px;
+    --point-five-col-gap: .5rem;
+    --flex-wrap: wrap;
+    --justify-content-around: space-around;
+    --justify-content-between: space-between;
+
+    --auto-height: auto;
+    --point-five-padding: .5rem;
+    --twelve-border-radius: 12px;
+    --point-five-margin: .5rem;
+    --one-rem-padding: 1rem;
 }
 
 header {
@@ -43,22 +58,20 @@ header {
 
     .l-ham {
         display: var(--flex-display);
-        justify-content: space-between;
-        align-items: center;
+        justify-content: var(--justify-content-between);
+        align-items: var(--center-align-items);
 
         .mode {
             display: var(--flex-display);
-            align-items: center;
+            align-items: var(--center-align-items);
             gap: .3rem;
 
             img {
                 width: 30px;
                 height: 30px;
-                /* filter: invert(1); */
-
             }
             .no-mode {
-                display: none;
+                display: var(--display-none);
             }
         }
     }
@@ -130,7 +143,7 @@ header {
 
     .hamburger {
         background: none;
-        border: none;
+        border: var(--border-none);
         color: var(--hover-background-card);
         cursor: var(--cursor-pointer);
     }
@@ -152,9 +165,9 @@ main {
         .hero-image {
 
                 img {
-                    width: 100%;
-                    height: auto;
-                    display: block;
+                    width: var(--hundred-width);
+                    height: var(--auto-height);
+                    display: var(--display-block);
                 }
 
         }
@@ -168,8 +181,8 @@ main {
         transform: translate(-1%, -1%);
 
         button {
-            padding: .5rem;
-            border-radius: 12px;
+            padding: var(--point-five-padding);
+            border-radius: var(--twelve-border-radius);
             background-color: var(--primary-color-primary);
             color: var(--hover-background-card);
         }
@@ -185,7 +198,7 @@ main {
     }
 
     .all-events {
-        margin: .5rem;
+        margin: var(--point-five-margin);
 
         h2 {
             background-color: var(--primary-color-primary);
@@ -198,6 +211,16 @@ main {
             background-color: var(--hover-background-card);
             padding-bottom: 9rem;
             margin-bottom: .7rem;
+
+            .event-list {
+                padding: var(--one-rem-padding);
+                p {
+                    text-align: var(--text-align);
+                }
+                p::before {
+                    content: url("https://planetceles.github.io/wdd231/images/dot.svg");
+                }
+            }
         }
 
         .weather {
@@ -207,11 +230,11 @@ main {
             .img-w {
                 display: var(--flex-display);
                 column-gap: .7rem;
-                padding: 1rem;
+                padding: var(--one-rem-padding);
 
                 img {
                     width: 110px;
-                    height: auto;
+                    height: var(--auto-height);
                     align-self: flex-start;
                 }
             }
@@ -222,7 +245,7 @@ main {
             background-color: var(--hover-background-card);
 
             p {
-                padding: .4rem;
+                padding: var(--four-padding);
             }
         }
     }
@@ -230,8 +253,8 @@ main {
     .all-business {
 
         .business {
-            border-radius: 12px;
-            margin: .5rem;
+            border-radius: var(--twelve-border-radius);
+            margin: var(--point-five-margin);
             background-color: var(--hover-background-card);
 
             .title {
@@ -239,23 +262,22 @@ main {
                 border-bottom: 1px solid #ddd;
                 background-color: var(--primary-color-primary);
                 color: var(--hover-background-card);
-                padding: .4rem;
+                padding: var(--four-padding);
                 border-top-left-radius: 12px;
                 border-top-right-radius: 12px;
             }
             .img-bus {
                 display: var(--flex-display);
                 align-items: var(--center-align-items);
-                padding: .5rem;
+                padding: var(--point-five-padding);
                 column-gap: .5rem;
             }
             
         }
     }
     .member {
-        /* background-color: red; */
         display: var(--flex-display);
-        flex-direction: column;
+        flex-direction: var(--flex-direction);
         align-items: var(--center-align-items);
         .member-card {
             background-color: var(--hover-background-card);
@@ -269,9 +291,8 @@ main {
             }
 
             img {
-                /* border: 2px solid black; */
                 width: 120px;
-                height: auto;
+                height: var(--auto-height);
                 object-fit: cover;
                 border-radius: 10px;
                 
@@ -282,12 +303,9 @@ main {
         }
         
     }
-    /* #member { */
-            /* border: 3px solid red; */
-        /* } */
     #member.list {
         display: var(--flex-display);
-        flex-direction: column;
+        flex-direction: var(--flex-direction);
         
     }
     #member.list img {
@@ -298,12 +316,10 @@ main {
     } */
     .members {
         .buttons {
-            /* background-color: red; */
             display: var(--flex-display);
-            justify-content: space-between;
+            justify-content: var(--justify-content-between);
             align-items: var(--center-align-items);
             padding-right: 1rem;
-            /* justify-self: flex-start; */
 
             .view-buttons {
                 button {
@@ -311,7 +327,7 @@ main {
                     color: var(--hover-background-card);
                     padding: .1rem .5rem;
                     border-radius: 10px;
-                    border: none;
+                    border: var(--border-none);
                     cursor: var(--cursor-pointer);
                 }
                 button:hover {
@@ -325,17 +341,17 @@ main {
 footer {
     background-color: var(--primary-color-primary);
     color: var(--hover-background-card);
-    padding: .5rem;
+    padding: var(--point-five-padding);
 
     .chamber-address {
         padding-top: .5rem;
     }
     .social {
-        padding: 1rem;
+        padding: var(--one-rem-padding);
         
         ul {
             display: var(--flex-display);
-            justify-content: space-around;
+            justify-content: var(--justify-content-around);
             list-style: var(--list-style);
 
 
