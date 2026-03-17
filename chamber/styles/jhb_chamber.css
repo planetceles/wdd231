@@ -52,8 +52,8 @@ header {
             gap: .3rem;
 
             img {
-                width: 35px;
-                height: 35px;
+                width: 30px;
+                height: 30px;
                 /* filter: invert(1); */
 
             }
@@ -137,7 +137,7 @@ header {
 
     .hamburger::before {
         content: "\2630";
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .hamburger.show::before {
@@ -275,6 +275,49 @@ main {
                 object-fit: cover;
                 border-radius: 10px;
                 
+            }
+        }
+        .member-card.gold {
+            border: 1px solid gold;
+        }
+        
+    }
+    /* #member { */
+            /* border: 3px solid red; */
+        /* } */
+    #member.list {
+        display: var(--flex-display);
+        flex-direction: column;
+        
+    }
+    #member.list img {
+        display: var(--display-none);
+    }
+    /* #member.list .member-card:nth-child(even) {
+        background-color: var(--white-color);
+    } */
+    .members {
+        .buttons {
+            /* background-color: red; */
+            display: var(--flex-display);
+            justify-content: space-between;
+            align-items: var(--center-align-items);
+            padding-right: 1rem;
+            /* justify-self: flex-start; */
+
+            .view-buttons {
+                button {
+                    background-color: var(--primary-color-primary);
+                    color: var(--hover-background-card);
+                    padding: .1rem .5rem;
+                    border-radius: 10px;
+                    border: none;
+                    cursor: var(--cursor-pointer);
+                }
+                button:hover {
+                    background-color: var(--hover-background-card);
+                    color: var(--black-color);
+                }
             }
         }
     }

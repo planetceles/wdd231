@@ -73,7 +73,7 @@
                 left: 70%;
             }
         }
-        h1, h2 {
+        h1 {
             /* width: 39.2rem; */
             max-width: 1023px;
             /* max-width: 1023px; */
@@ -132,6 +132,34 @@
             flex-direction: row;
             flex-wrap: wrap;
         }
+        /* #member.list .member-card { */
+            /* display: var(--grid-display); */
+            /* grid-template-columns: 1fr 1fr 1fr; */
+        /* } */
+        #member.list {
+            display: var(--flex-display);
+            flex-direction: row;
+        }
+        .members {
+            max-width: 1023px;
+            margin: 0 auto;
+            .buttons {
+                
+                /* width: 1023px;
+                margin: 0 auto; */
+                display: var(--flex-display);
+                justify-content: space-between;
+                align-items: var(--center-align-items);
+
+                .view-buttons {
+                    button {
+                        padding: .3rem 1.5rem;
+                    }
+                }
+                
+            }
+        }
+        
     }
     footer {
         display: var(--flex-display);

@@ -53,5 +53,23 @@ const displayMembers = (members) => {
         
 
         cards.appendChild(card);
+
+        if (member.membership === "Gold") {
+        card.classList.add("gold");
+}
     });
 }
+
+// toggle the views
+const gridButton = document.querySelector("#grid-button");
+const listButton = document.querySelector("#list-button");
+const memberContainer = document.querySelector("#member");
+
+gridButton.addEventListener("click", () => {
+    memberContainer.classList.add("grid");
+    memberContainer.classList.remove("list");
+});
+listButton.addEventListener("click", () => {
+    memberContainer.classList.add("list");
+    memberContainer.classList.remove("grid");
+});

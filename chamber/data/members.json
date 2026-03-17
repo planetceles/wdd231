@@ -8,7 +8,17 @@
             "membership": "Gold",
             "website": "https//...",
             "imageurl": "https://planetceles.github.io/wdd231/images/thecelestin.jpg",
-            "isactive": true
+            "isactive": false
+        },
+        {
+            "name": "Celestin",
+            "lastname": "Mande",
+            "address": "Rifle Range, Johannesburg",
+            "phone": "254-421-568",
+            "membership": "Gold",
+            "website": "https//...",
+            "imageurl": "https://planetceles.github.io/wdd231/images/thecelestin.jpg",
+            "isactive": false
         },
         {
             "name": "Celestin",
@@ -28,7 +38,7 @@
             "membership": "Gold",
             "website": "https//...",
             "imageurl": "https://planetceles.github.io/wdd231/images/thecelestin.jpg",
-            "isactive": true
+            "isactive": false
         },
         {
             "name": "Celestin",
@@ -48,7 +58,7 @@
             "membership": "Gold",
             "website": "https//...",
             "imageurl": "https://planetceles.github.io/wdd231/images/thecelestin.jpg",
-            "isactive": true
+            "isactive": false
         },
         {
             "name": "Celestin",
@@ -58,17 +68,7 @@
             "membership": "Gold",
             "website": "https//...",
             "imageurl": "https://planetceles.github.io/wdd231/images/thecelestin.jpg",
-            "isactive": true
-        },
-        {
-            "name": "Celestin",
-            "lastname": "Mande",
-            "address": "Rifle Range, Johannesburg",
-            "phone": "254-421-568",
-            "membership": "Gold",
-            "website": "https//...",
-            "imageurl": "https://planetceles.github.io/wdd231/images/thecelestin.jpg",
-            "isactive": true
+            "isactive": false
         }
     ]
 }
