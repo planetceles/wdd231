@@ -227,9 +227,9 @@ main {
                 p {
                     text-align: var(--text-align);
                 }
-                p::before {
+                /* p::before {
                     content: url("https://planetceles.github.io/wdd231/images/dot.svg");
-                }
+                } */
             }
         }
 
