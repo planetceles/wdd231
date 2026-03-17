@@ -81,12 +81,14 @@ header {
         flex-direction: var(--flex-direction);
         align-items: var(--center-align-items);
         width: 255px;
-
+        
         a {
             text-decoration: var(--text-decoration-none);
             color: var(--hover-background-card);
             
-
+            h2 {
+                font-size: larger;
+            }
             span {
                 color: #84f5ca;
 
