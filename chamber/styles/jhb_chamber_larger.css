@@ -70,7 +70,7 @@
         }
     }
     main {
-        padding-top: 97px;
+        /* padding-top: 97px; */
         .hero {
             width: var(--hundred-width);
             /* max-width: 1050px; */
