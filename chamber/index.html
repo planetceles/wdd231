@@ -57,17 +57,116 @@
 
         <nav id="nav-bar" class="navigation">
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li class="current"><a href="directory.html">Directory</a></li>
+                <li class="current"><a href="#">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="#">Join</a></li>
                 <li><a href="#">Discover</a></li>
             </ul>
         </nav>
     </header>
     <main>
+        <section class="hero">
+            <picture class="hero-image">
+                <source media="(min-width: 1000px)" srcset="images/joha.webp">
+                <source media="(min-width: 500px)" srcset="images/joha.webp">
+                <img src="images/jhbs-small.webp" alt="Johannesburg" width="500" height="250">
+            </picture>
+
+            <div class="hero-button">
+                <button>Join the Chamber</button>
+            </div>
+        </section>
+
+        <h1>Home</h1>
+
+        <section class="all-events">
+
+            <div class="events">
+                <h2>Events</h2>
+                <div class="event-list">
+                    <p>Sicaf Presentations</p>
+                    <p>The Grand Tour</p>
+                    <p>Employments Fire Side</p>
+                </div>
+            </div>
+
+            <div class="weather">
+                <h2>Current Weather</h2>
+                <div class="img-w">
+                    <img id="weather-icon" src="" alt="">
+                    <div class="w-info">
+                        <p>Temp:<span id="current-temp"></span></p>
+                        <p>Partly Cloudy</p>
+                        <p>Heigh: <span>26°</span></p>
+                        <p>Low: <span>15°C</span></p>
+                        <p>Humidity: <span id="humidity"></span></p>
+                        <p>Sunrise: <span>06:12</span></p>
+                        <p>Sunset: <span>18:20</span></p>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="forecast">
+                <h2>Weather Forecast</h2>
+                <p><span id="today"></span>: <strong><span id="today-temp"></span></strong></p>
+                <p><span id="tomorrow"></span>: <strong><span id="tomorrow-temp"></span></strong></p>
+                <p><span id="next-day"></span>: <strong><span id="next-day-temp"></span></strong></p>
+            </div>
+        </section>
+        <!-- <div id="spot-light" class="spot-light"></div> -->
+        <section id="spot-light" class="all-business">
+            <div class="sicaf business">
+                <div class="title">
+                    <h2>Sicaf South Africa</h2>
+                    <p>Business Tag Line</p>
+                </div>
+                <div class="img-bus">
+                    <img src="images/infinity.svg" alt="Business">
+                    <div class="business-info">
+                        <p><strong>EMAIL</strong>: <span>sicaf@gmail.com</span></p>
+                        <p><strong>PHONE</strong>: <span>111-222-555</span></p>
+                        <p><strong>URL</strong>: <span>sicafsa.com</span></p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="sicaf business">
+                <div class="title">
+                    <h2>Sicaf South Africa</h2>
+                    <p>Business Tag Line</p>
+                </div>
+                <div class="img-bus">
+                    <img src="images/infinity.svg" alt="Business">
+                    <div class="business-info">
+                        <p><strong>EMAIL</strong>: <span>sicaf@gmail.com</span></p>
+                        <p><strong>PHONE</strong>: <span>111-222-555</span></p>
+                        <p><strong>URL</strong>: <span>sicafsa.com</span></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sicaf business">
+                <div class="title">
+                    <h2>Sicaf South Africa</h2>
+                    <p>Business Tag Line</p>
+                </div>
+                <div class="img-bus">
+                    <img src="images/infinity.svg" alt="Business">
+                    <div class="business-info">
+                        <p><strong>EMAIL</strong>: <span>sicaf@gmail.com</span></p>
+                        <p><strong>PHONE</strong>: <span>111-222-555</span></p>
+                        <p><strong>URL</strong>: <span>sicafsa.com</span></p>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
 
         
-        <section class="members">
+        <!-- <section class="members">
             <div class="buttons">
                 <h2>Our Members</h2>
                 <div class="view-buttons">
@@ -80,7 +179,7 @@
             <div id="member" class="member">
                 
             </div>
-        </section>
+        </section> -->
     </main>
     <footer>
         <div class="chamber-address">

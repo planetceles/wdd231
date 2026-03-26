@@ -37,20 +37,22 @@ def create_member():
         "address": get_input("Address: "),
         "location": {
             "city": get_input("City: "),
-            "province": get_input("Province: ")
+            "province": get_input("Province: "),
+            "country": get_input("Country: ")
         },
         "phone": get_input("Phone: "),
         "email": get_input("Email: "),
         "website": get_input("Website: "),
-        "membershipLevel": get_input("Membership Level (Basic/Silver/Gold/Premium): "),
+        "membershipLevel": get_input("Membership Level (Basic/Member/Silver/Gold/Premium): "),
         "industry": get_input("Industry: "),
         "description": get_input("Description: "),
         "services": get_list("Services offered"),
-        "image": get_input("Image URL or path: "),
+        "imageurl": get_input("Image URL or path: "),
         "socialMedia": {
             "facebook": get_input("Facebook (optional): ", False),
             "linkedin": get_input("LinkedIn (optional): ", False),
-            "instagram": get_input("Instagram (optional): ", False)
+            "instagram": get_input("Instagram (optional): ", False),
+            "twitter": get_input("Twitter: ", False)
         },
         "tags": get_list("Tags (e.g. retail, tech, food)"),
         "isActive": get_boolean("Is the business active?"),
@@ -110,7 +112,7 @@ def test_member_structure():
         "membershipLevel": "Gold",
         "industry": "Tech",
         "description": "Test",
-        "image": "img.png",
+        "imageurl": "img.png",
         "isActive": True
     }
 

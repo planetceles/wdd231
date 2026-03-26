@@ -186,18 +186,23 @@ main {
 
     .hero-button {
         position: absolute;
-        top: 60%;
-        left: 50%;
+        top: 50%;
+        left: 45%;
         transform: translate(-1%, -1%);
 
         button {
             padding: var(--point-five-padding);
             border-radius: var(--twelve-border-radius);
-            background-color: var(--primary-color-primary);
-            color: var(--hover-background-card);
+            background-color: var(--hover-background-card);
+            color: var(--black-color);
+            font-size: .8rem;
         }
 
         button:hover {
+            background-color: var(--primary-color-primary);
+            color: var(--white-color);
+        }
+        button:active {
             background-color: var(--hover-background-card);
             color: var(--black-color);
         }
@@ -281,6 +286,12 @@ main {
                 align-items: var(--center-align-items);
                 padding: var(--point-five-padding);
                 column-gap: .5rem;
+
+                img {
+                    border: 2px solid red;
+                    width: 100px;
+                    height: auto;
+                }
             }
             
         }

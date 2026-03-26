@@ -60,5 +60,39 @@
         "featured": false,
         "joinDate": "2026-03-17",
         "lastUpdated": "2026-03-17"
+    },
+    {
+        "name": "Mande",
+        "address": "283 dsl kdls",
+        "location": {
+            "city": "Johannesburg",
+            "province": "Gauteng",
+            "country": "South Africa"
+        },
+        "phone": "232-323-434",
+        "email": "mande@gmailmande.com",
+        "website": "mande.amdne.com",
+        "membershipLevel": "Premium",
+        "industry": "Education",
+        "description": "teaching education",
+        "services": [
+            "Teaching",
+            "Education",
+            "Mentorship"
+        ],
+        "imageurl": "coming",
+        "socialMedia": {
+            "facebook": "mmc",
+            "linkedin": "mmc",
+            "instagram": "mmc",
+            "twitter": "mmc"
+        },
+        "tags": [
+            "@mande"
+        ],
+        "isActive": true,
+        "featured": true,
+        "joinDate": "2026-03-18",
+        "lastUpdated": "2026-03-18"
     }
 ]
