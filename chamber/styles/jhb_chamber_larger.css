@@ -117,6 +117,14 @@
             .business {
                 margin: .5rem 0rem .3rem 0rem;
             }
+            .business.gold {
+                border-bottom: 5px solid gold;
+                /* background: linear-gradient(135deg, #fff8dc, #ffe066); */
+            }
+            .business.silver {
+                border-bottom: 5px solid silver;
+            }
+           
         }
         .member {
             background-color: re/d;
@@ -140,6 +148,11 @@
         #member.list {
             display: var(--flex-display);
             flex-direction: var(--row-direction);
+        }
+        #member.grid {
+            display: var(--flex-display);
+            flex-direction: var(--row-direction);
+            flex-wrap: var(--flex-wrap);
         }
         .members {
             max-width: var(--ten-three-max-width);

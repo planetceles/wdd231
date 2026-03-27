@@ -1,0 +1,9 @@
+@media only screen and (min-width:38rem) {
+    main {
+        h2 {
+            max-width: var(--ten-three-max-width);
+            margin: var(--zero-auto-margin);
+            padding: .5rem 0rem .2rem 0rem;
+        }
+    }
+}

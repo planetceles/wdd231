@@ -23,9 +23,18 @@ const url = "https://planetceles.github.io/wdd231/chamber/data/members.json";
 const cards = document.querySelector("#member");
 
 async function getMembersData() {
-    const response = await fetch(url);
-    const data = await response.json();
-    displayMembers(data.members);
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+
+        console.log(data);
+
+        displayMembers(data.members);
+    }
+    catch (error) {
+        console.error("Members fetch error:", error);
+    }
+    
 }
 getMembersData();
 
@@ -40,7 +49,7 @@ const displayMembers = (members) => {
         let portrait = document.createElement("img");
         card.classList.add("member-card");
 
-        fullName.textContent = `${member.name} ${member.lastname}`;
+        fullName.textContent = `${member.name}`;
         phone.textContent = `Phone Number: ${member.phone}`;
         address.textContent = `Addresss: ${member.address}`;
         membership.textContent = `Membership: ${member.membership}`;
@@ -68,6 +77,7 @@ const displayMembers = (members) => {
 }
     });
 }
+// spotlight
 const spotCards = document.querySelector("#spot-light");
 async function getSpotlight() {
     const response = await fetch(url);
@@ -139,14 +149,21 @@ const displaySpotlight = (members) => {
         let membership = document.createElement("p");
         membership.innerHTML = `<strong>Membership</strong>: ${spot.membership}`;
 
+        // let badge = document.createElement("span");
+        // badge.textContent = spot.membership;
+        // badge.classList.add("badge");
+
+
         info.appendChild(email);
         info.appendChild(phone);
         info.appendChild(membership);
+        // info.appendChild(badge);
         info.appendChild(website);
 
         bodyDiv.appendChild(img);
         bodyDiv.appendChild(info);
 
+        
         card.appendChild(titleDiv);
         card.appendChild(bodyDiv);
 
@@ -154,7 +171,10 @@ const displaySpotlight = (members) => {
         
     });
 }
-    
+
+// spot-title
+const spotTitle = document.querySelector("#spot-title");
+spotTitle.textContent = `Business Spotlights`;
 
 
 // toggle the views
