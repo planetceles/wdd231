@@ -52,13 +52,24 @@
     margin: .2rem;
 
     button {
-        padding: .2rem;
+        padding: .2rem .3rem;
+        margin-top: .2rem;
         border-radius: 8px;
-        background-color: var(--color-primary-dark);
+        background-color: var(--primary-color-primary);
         color: var(--white-color);
     }
     button:hover {
         background-color: var(--color-primary-dark);
-        color: var();
+    }
+}
+dialog {
+    position: fixed;
+    justify-self: center;
+    align-self: center;
+    padding: .5rem;
+
+    .dialog-close {
+        display: var(--grid-display);
+        grid-template-columns: auto 44px;
     }
 }
