@@ -58,21 +58,46 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+// display membership information
 const membershipInfo = document.querySelector("#membership-info");
+const myDialog = document.querySelector("#myDialog");
+const membershipHeading = document.querySelector("#myDialog h2");
+const benefits = document.querySelector("#myDialog h3");
+const membershipBenefits = document.querySelector("#myDialog p");
+const closeButton = document.querySelector("#myDialog button");
+
+closeButton.addEventListener("click", () => {
+    myDialog.close();
+});
 
 function displayMembershipInfo(levels) {
     levels.forEach(level => {
+        const card = document.createElement("div");
+        
         const heading = document.createElement("h3");
         const description = document.createElement("p");
         const button = document.createElement("button");
 
+        card.classList.add("membership-card");
+
         heading.textContent = `${level.name}`;
         description.textContent = `${level.description}`;
-        button.textContent = "Learn More";
+        button.textContent = "See Benefits";
+        button.addEventListener('click', () => showDialogInfo(level));
 
-        membershipInfo.appendChild(heading);
-        membershipInfo.appendChild(description);
-        membershipInfo.appendChild(button);
+        card.appendChild(heading);
+        card.appendChild(description);
+        card.appendChild(button);
+
+        membershipInfo.appendChild(card);
     });
 }
 displayMembershipInfo(membership);
+
+// show dialog information
+function showDialogInfo(level) {
+    membershipHeading.innerHTML = level.name;
+    benefits.innerHTML = `Your benefits`;
+    membershipBenefits.innerHTML = level.benefits.join(", ");
+    myDialog.showModal();
+}

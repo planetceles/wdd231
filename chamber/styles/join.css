@@ -1,0 +1,9 @@
+.membership-card {
+    background-color: red;
+    padding: .3rem;
+    margin: .2rem;
+
+    button {
+        padding: .2rem;
+    }
+}
