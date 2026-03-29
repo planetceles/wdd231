@@ -264,6 +264,30 @@ main {
         }
 
     }
+    dialog {
+        /* color: red; */
+        position: fixed;
+        top: 5rem;
+        left: 30rem;
+        border: 1px solid var(--text-color-primary);
+        border-radius: .25rem;
+        padding: 1rem;
+        background-color: var(--background-card);
+        box-shadow: 0 0 3rem var(--text-color-primary);
+        width: 40%;
+        max-width: 600px;
+
+        button {
+            position: absolute;
+            top: 30px;
+            right: 26px;
+            padding: .2rem 1rem;
+            border: 1px solid var(--text-color-primary);
+        }
+    }
+    ::backdrop {
+        background-color: transparent;
+    }
 }
 
 footer {

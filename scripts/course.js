@@ -110,4 +110,52 @@ document.querySelector("#cse").addEventListener("click", () => {
     displayCourses(cseCourses);
 });
 
-displayCourses(courses)
+displayCourses(courses);
+
+// modals
+const modal = document.querySelector("#course-details");
+const openModal = document.querySelector("#wdd");
+const closeModal = document.querySelector(".close-button");
+const courseDiv = document.querySelector("#courses-container");
+
+function displayCourseDetails(course) {
+    modal.innerHTML = "";
+    modal.innerHTML = `
+      <button id="closeModal">❌</button>
+      <h2>${course.subject} ${course.number}</h2>
+      <h3>${course.title}</h3>
+      <p><strong>Credits</strong>: ${course.credits}</p>
+      <p><strong>Certificate</strong>: ${course.certificate}</p>
+      <p>${course.description}</p>
+      <p><strong>Technologies</strong>: ${course.technology.join(", ")}</p>
+    `;
+    modal.showModal();
+
+    closeModal.addEventListener("click", () => {
+        modal.close();
+    });
+}
+
+courseDiv.addEventListener("click", () => {
+    displayCourseDetails(course);
+});
+
+// openModal.addEventListener("click", () => {
+//     modal.showModal();
+// });
+
+// closeModal.addEventListener("click", () => {
+//     modal.close();
+// });
+
+// const modal2 = document.querySelector("#course-details2");
+// const openModal2 = document.querySelector("#cse");
+// const closeModal2 = document.querySelector(".close-button2");
+
+// openModal2.addEventListener("click", () => {
+//     modal2.showModal();
+// });
+
+// closeModal2.addEventListener("click", () => {
+//     modal2.close();
+// });

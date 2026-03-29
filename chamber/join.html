@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Johannesburg Ridge Chamber Of Commerce Directory</title>
+    <meta name="author" content="Celeste Mande">
+    <meta name="description"
+        content="Find Businesses around you, Make your Business knowns and expanded, Make the city lighter than ever">
+    <meta property="og:title" content="Johannesburg Ridge Chamber">
+    <meta property="og:description"
+        content="Find more Business an upcoming events with ease, everything at your fingertip. Join the Chamber for greatness">
+    <meta property="og:url" content="https://planetceles.github.io/wdd231/chamber/">
+    <meta property="og:locale" content="en-US">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Johannesburg Ridge Chamber Of Commerce">
+    <meta property="og:image" content="https://planetceles.github.io/wdd231/chamber/images/joha.webp">
+    <meta name="twitter:url" content="https://planetceles.github.io/wdd231/chamber/">
+    <meta name="twitter:title" content="Johannesburg Ridge Chamber">
+    <meta name="twitter:description"
+        content="Find Businesses around you, Make your Business knowns and expanded, Make the city lighter than ever">
+    <meta name="twitter:card" content="summary">
+    <link rel="stylesheet" href="styles/jhb_chamber.css">
+    <link rel="stylesheet" href="styles/jhb_chamber_larger.css">
+    <link rel="stylesheet" href="styles/larger_index.css">
+    <!-- <script type="module" src="scripts/jhb_chamber.mjs"></script> -->
+     <script src="scripts/join.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Birthstone&family=Cormorant:ital,wght@0,300..700;1,300..700&family=DM+Serif+Display:ital@0;1&family=DM+Serif+Text:ital@0;1&family=Edu+SA+Hand:wght@400..700&family=Gideon+Roman&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <div class="l-ham">
+            <div class="logo">
+                <a href="directory.html">
+                    <h2>JHB <span>Ridge</span></h2>
+                </a>
+                <a href="directory.html">
+                    <p>Chamber of Commerce</p>
+                </a>
+
+            </div>
+            <div class="mode">
+                <img class="l-mode" src="images/circle-half.svg" alt="Mode">
+                <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+                <!-- <div class="no-mode"> -->
+                    <!-- <img src="images/circle-half.svg" alt="Mode"> -->
+                <!-- </div> -->
+                
+            </div>
+
+        </div>
+
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li class="current"><a href="#">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Join the Chamber</h2>
+        <form method="get" action="feedback.html" class="join-chamber">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label>Name<span class="red">*</span> <input type="text" name="fname" required autocomplete="given-name" title="Your First Name"></label>
+                <label>Last Name<span class="red">*</span> <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+                <label>Title/Position<span class="red">*</span> <input type="text" name="title" required autocomplete="organization-title" title="Your Title or Position"></label>
+                <label>Email<span class="red">*</span> <input type="email" name="email" required placeholder="youremail@gmail.com" autocomplete="email" title="Your Email"></label>
+                <label>Phone Number<span class="red">*</span> <input type="tel" name="phone" required placeholder="123-456-7890" autocomplete="tel" title="Your Phone Number"></label>
+            </fieldset>
+            <fieldset>
+                <legend>Business Information</legend>
+                <label>Business Name<span class="red">*</span> <input type="text" name="bname" required title="Business Name"></label>
+                <label>Business Address <input type="text" name="baddress" title="Business Address"></label>
+                <label>Website<span class="red">*</span> <input type="text" name="website" required title="Business Website"></label>
+                <label>Industry<span class="red">*</span> <input type="text" name="industry" required title="Business Industry"></label>
+                <label>Business Description<span class="red">*</span> <textarea name="description" id="t-area" title="Business Description" required></textarea></label>
+                
+            </fieldset>
+            <fieldset>
+                <legend>Membership</legend>
+                <label>Membership Level<span class="red">*</span> <select name="memberLevel" id="memberLevel" required>
+                    <option disabled selected value="">Select Membership Level...</option>
+                </select> </label>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <div class="chamber-address">
+            <strong>JHB Ridge Chamber of commerce</strong>
+            <p>Rifle Range Road</p>
+            <p>Johannesburg, South Africa</p>
+            <p>---</p>
+            <p>27 65 885 7907</p>
+        </div>
+
+        <div class="social">
+            <ul>
+                <li><a href="https://github.com/planetceles" target="_blank" rel="noopener"><img src="images/github.svg"
+                            alt="GitHub"></a></li>
+                <li><a href="https://www.linkedin.com/in/celestin-mande-mande1/" target="_blank" rel="noopener"><img
+                            src="images/linkedin.svg" alt="LinkedIn"></a></li>
+                <li><a href="https://www.facebook.com/celestmoise.mandemande" target="_blank" rel="noopener"><img
+                            src="images/facebook.svg" alt="Facebook"></a></li>
+                <li><a href="https://www.instagram.com/mandecmande/" target="_blank" rel="noopener"><img
+                            src="images/instagram.svg" alt="Instagram"></a></li>
+            </ul>
+        </div>
+
+        <div class="project">
+            <p>WDD231 Class Project</p>
+            <p>Celeste Mande</p>
+            <p>&copy;<span id="current-year"></span> JHB Ridge Chamber of Commerce</p>
+            <p><span id="last-modified"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>
