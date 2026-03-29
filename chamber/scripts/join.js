@@ -46,6 +46,7 @@ const membership = [
         ]
     }
 ];
+
 document.addEventListener("DOMContentLoaded", () => {
     const selectMember = document.querySelector("#memberLevel");
 
@@ -56,3 +57,22 @@ document.addEventListener("DOMContentLoaded", () => {
         selectMember.appendChild(option);
     });
 });
+
+const membershipInfo = document.querySelector("#membership-info");
+
+function displayMembershipInfo(levels) {
+    levels.forEach(level => {
+        const heading = document.createElement("h3");
+        const description = document.createElement("p");
+        const button = document.createElement("button");
+
+        heading.textContent = `${level.name}`;
+        description.textContent = `${level.description}`;
+        button.textContent = "Learn More";
+
+        membershipInfo.appendChild(heading);
+        membershipInfo.appendChild(description);
+        membershipInfo.appendChild(button);
+    });
+}
+displayMembershipInfo(membership);
