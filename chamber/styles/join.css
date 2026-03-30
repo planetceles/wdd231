@@ -51,8 +51,9 @@
 .membership-card {
     background-color: var(--hover-background-card);
     padding: .3rem;
-    margin: .2rem;
+    margin-bottom: .7rem;
     border-radius: var(--h-border-radius);
+    animation: fadeIn 5s ease-in-out;
 
     button {
         padding: .2rem .3rem;
@@ -65,13 +66,21 @@
         background-color: var(--color-primary-dark);
     }
 }
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 dialog {
     position: fixed;
     justify-self: center;
     align-self: center;
     padding: .5rem;
     width: 80%;
-    max-width: 450px;
+    max-width: 500px;
     background-color: var(--hover-background-card);
 
     .dialog-close {
