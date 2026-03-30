@@ -44,6 +44,8 @@
     --twelve-border-radius: 12px;
     --point-five-margin: .5rem;
     --one-rem-padding: 1rem;
+
+    --h-border-radius: 8px
 }
 
 .membership-card {
@@ -54,7 +56,7 @@
     button {
         padding: .2rem .3rem;
         margin-top: .2rem;
-        border-radius: 8px;
+        border-radius: var(--h-border-radius);
         background-color: var(--primary-color-primary);
         color: var(--white-color);
     }
@@ -92,23 +94,57 @@ dialog {
     background-color: rgba(0, 0, 0, 0.25);
 }
 form {
-    padding: .3rem;
+    padding: 1rem .3rem;
     margin: .2rem;
     /* padding: 1rem .8rem; */
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    border-radius: var(--h-border-radius);
+    background-color: var(--hover-background-card);
 }
 form input,
 form select,
 form textarea {
     display: var(--display-block);
     padding: 12px;
-    width: 95%;
+    width: 100%;
     margin-top: .3rem;
     margin-bottom: .5rem;
+    border-radius: var(--h-border-radius);
     /* margin: 1rem .2rem; */
 }
 form fieldset {
     padding: .3rem;
     border: 1px solid var(--primary-color-primary);
     color: var(--primary-color-primary);
+    border-radius: var(--h-border-radius);
+}
+.red {
+    color: red;
+}
+
+@media only screen and (min-width:38rem) {
+    main {
+        h2 {
+            max-width: var(--ten-three-max-width);
+            margin: var(--zero-auto-margin);
+            padding: .5rem 0rem .2rem 0rem;
+            /* border: 1px solid black; */
+            /* margin-left: 0; */
+        }
+        section {
+            /* display: var(--flex-display); */
+            /* justify-content: var(--justify-content-between); */
+            display: var(--grid-display);
+            grid-template-columns: auto 400px;
+            gap: .7rem;
+            max-width: var(--ten-three-max-width);
+            margin: var(--zero-auto-margin);
+
+            .info {
+                h2 {
+                    padding-top: 0;
+                }
+            }
+        }
+    }
 }
