@@ -1,3 +1,3 @@
 const myInfo = new URLSearchParams(window.location.search);
 
-console.log(myInfo.get("name"));
+console.log(myInfo.get("Name"));
