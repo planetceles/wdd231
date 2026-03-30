@@ -101,3 +101,6 @@ function showDialogInfo(level) {
     membershipBenefits.innerHTML = level.benefits.join(", ");
     myDialog.showModal();
 }
+
+// timestamp
+document.querySelector("#timestamp").value = new Date().toISOString();
