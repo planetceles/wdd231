@@ -52,6 +52,7 @@
     background-color: var(--hover-background-card);
     padding: .3rem;
     margin: .2rem;
+    border-radius: var(--h-border-radius);
 
     button {
         padding: .2rem .3rem;
@@ -103,7 +104,8 @@ form {
 }
 form input,
 form select,
-form textarea {
+form textarea,
+form button {
     display: var(--display-block);
     padding: 12px;
     width: 100%;
@@ -118,6 +120,13 @@ form fieldset {
     color: var(--primary-color-primary);
     border-radius: var(--h-border-radius);
 }
+form button {
+    background-color: var(--primary-color-primary);
+    color: var(--white-color);
+}
+form button:hover {
+        background-color: var(--color-primary-dark);
+    }
 .red {
     color: red;
 }

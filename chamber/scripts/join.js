@@ -1,6 +1,6 @@
 const membership = [
     {
-        name: "Member",
+        name: "NP Membership (Free)",
         price: "Free",
         description: "For charities and community organizations.",
         benefits: [

@@ -75,13 +75,13 @@
                 <legend>Personal Information</legend>
                 <label>Name<span class="red">*</span> <input type="text" name="fname" required autocomplete="given-name" title="Your First Name"></label>
                 <label>Last Name<span class="red">*</span> <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
-                <label>Title/Position<span class="red">*</span> <input type="text" name="title" required autocomplete="organization-title" title="Your Title or Position"></label>
+                <label>Organizational Title<span class="red">*</span> <input type="text" name="title" required autocomplete="organization-title" title="Enter at least 7 characters using only letters, spaces, or hyphens" pattern="[A-Za-z\s\-]{7,}"></label>
                 <label>Email<span class="red">*</span> <input type="email" name="email" required placeholder="youremail@gmail.com" autocomplete="email" title="Your Email"></label>
                 <label>Phone Number<span class="red">*</span> <input type="tel" name="phone" required placeholder="123-456-7890" autocomplete="tel" title="Your Phone Number"></label>
             </fieldset>
             <fieldset>
                 <legend>Business Information</legend>
-                <label>Business Name<span class="red">*</span> <input type="text" name="bname" required title="Business Name"></label>
+                <label>Business Name<span class="red">*</span> <input type="text" name="bname" required autocomplete="organization" title="Business Name"></label>
                 <label>Business Address <input type="text" name="baddress" title="Business Address"></label>
                 <label>Website<span class="red">*</span> <input type="text" name="website" required title="Business Website"></label>
                 <label>Industry<span class="red">*</span> <input type="text" name="industry" required title="Business Industry"></label>
@@ -93,7 +93,9 @@
                 <label>Membership Level<span class="red">*</span> <select name="memberLevel" id="memberLevel" required>
                     <option disabled selected value="">Select Membership Level...</option>
                 </select> </label>
+                <label><input type="hidden" name="timestamp" id="timestamp"></label>
             </fieldset>
+            <button type="submit">Join The Chamber</button>
         </form>
         <div class="info">
             <h2>Membership Information</h2>
