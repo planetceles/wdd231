@@ -59,11 +59,12 @@
         padding: .2rem .3rem;
         margin-top: .2rem;
         border-radius: var(--h-border-radius);
-        background-color: var(--primary-color-primary);
-        color: var(--white-color);
+        /* background-color: var(--primary-color-primary); */
+        /* color: var(--white-color); */
     }
     button:hover {
-        background-color: var(--color-primary-dark);
+        background-color: var(--primary-color-primary);
+        color: var(--white-color);
     }
 }
 @keyframes fadeIn {
@@ -82,6 +83,8 @@ dialog {
     width: 80%;
     max-width: 500px;
     background-color: var(--hover-background-card);
+    /* border-radius: 50px solid var(--primary-color-primary); */
+    /* border: 1px red; */
 
     .dialog-close {
         /* display: var(--flex-display); */
@@ -92,24 +95,26 @@ dialog {
 
         button {
             border-radius: 10px;
-            background-color: var(--primary-color-primary);
-            color: red;
+            /* background-color: var(--primary-color-primary); */
+            /* color: red; */
         }
         button:hover {
             background-color: var(--color-primary-dark);
+            color: var(--hover-background-card);
         }
     }
 }
 ::backdrop {
-    background-color: rgba(0, 0, 0, 0.25);
+    /* background-color: rgba(0, 0, 0, 0.25); */
+    background-color: transparent;
 }
 form {
     padding: 1rem .3rem;
     margin: .2rem;
     /* padding: 1rem .8rem; */
-    /* border: 1px solid black; */
+    border: 1px solid var(--hover-background-card);
     border-radius: var(--h-border-radius);
-    background-color: var(--hover-background-card);
+    /* background-color: var(--hover-background-card); */
 }
 form input,
 form select,
@@ -129,16 +134,20 @@ form fieldset {
     color: var(--primary-color-primary);
     border-radius: var(--h-border-radius);
 }
+ form fieldset {
+    margin-top: .5rem;
+ }
 form button {
     background-color: var(--primary-color-primary);
     color: var(--white-color);
 }
 form button:hover {
-        background-color: var(--color-primary-dark);
+    background-color: var(--hover-background-card);
+    color: var(--black-color);
     }
-.red {
-    color: red;
-}
+/* .red { */
+    /* color: red; */
+/* } */
 
 @media only screen and (min-width:38rem) {
     main {
