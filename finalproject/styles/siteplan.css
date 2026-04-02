@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --header-footer-color: #102A43;
+    --background-color: #F2F6FA;
+    --white: #FFFFFF;
+    --black: #000000;
+
+    --font-family: "DM Serif Display", serif;
+    --second-font-family: "Lora", serif;
+}
