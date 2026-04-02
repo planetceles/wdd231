@@ -12,3 +12,29 @@
     --font-family: "DM Serif Display", serif;
     --second-font-family: "Lora", serif;
 }
+header,
+footer {
+    background-color: var(--header-footer-color);
+    color: var(--white);
+    font-family: var(--font-family);
+    text-align: center;
+    padding: 1rem;
+}
+body {
+    background-color: var(--background-color);
+}
+main {
+    background-color: var(--background-color);
+    font-family: var(--second-font-family);
+    width: 900px;
+    margin: 0 auto;
+
+    h2,
+    p,
+    h3 {
+        padding: .5rem;
+    }
+    ul {
+        padding: 1rem;
+    }
+}
