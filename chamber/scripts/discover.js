@@ -12,9 +12,18 @@ const displayPlaces = (places) => {
         card.classList.add("place-card");
 
         name.textContent = `${place.name}`;
+        description.textContent = `${place.description}`;
+        address.textContent = `${place.address}`;
+        pic.setAttribute("src", `${place.photo_url}`);
+        pic.setAttribute("alt", `${place.name}`);
+        pic.setAttribute("loading", "lazy");
 
         card.appendChild(name);
+        card.appendChild(pic);
+        card.appendChild(description);
+        card.appendChild(address);
 
         placesSection.appendChild(card);
     });
 }
+displayPlaces(places);
