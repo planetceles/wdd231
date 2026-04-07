@@ -16,6 +16,7 @@ const displayPlaces = (places) => {
         description.textContent = `${place.description}`;
         address.textContent = `${place.address}`;
         button.innerHTML = `Learn More`;
+        button.addEventListener("click", () => showDialog(place));
         pic.setAttribute("src", `${place.photo_url}`);
         pic.setAttribute("alt", `${place.name}`);
         pic.setAttribute("loading", "lazy");
@@ -30,3 +31,21 @@ const displayPlaces = (places) => {
     });
 }
 displayPlaces(places);
+
+// show dialog place details
+const myDialog = document.querySelector("#myDialog");
+const placeName = document.querySelector("#myDialog h2");
+const placeDescription = document.querySelector("#myDialog p");
+const closeDialog = document.querySelector("#myDialog button");
+
+closeDialog.addEventListener("click", () => {
+    myDialog.close();
+    myDialog.classList.add("dialogDetails");
+});
+
+function showDialog(place) {
+    placeName.innerHTML = place.name;
+    placeDescription.innerHTML = place.details;
+    myDialog.showModal();
+
+}
