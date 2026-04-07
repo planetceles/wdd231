@@ -40,12 +40,13 @@ const closeDialog = document.querySelector("#myDialog button");
 
 closeDialog.addEventListener("click", () => {
     myDialog.close();
-    myDialog.classList.add("dialogDetails");
+    
 });
 
 function showDialog(place) {
     placeName.innerHTML = place.name;
     placeDescription.innerHTML = place.details;
+    myDialog.classList.add("dialogDetails");
     myDialog.showModal();
 
 }
