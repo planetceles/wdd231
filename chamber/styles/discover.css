@@ -52,27 +52,75 @@
 
     --h-border-radius: 8px
 }
+dialog {
+    position: fixed;
+    justify-self: center;
+    align-self: center;
+    width: 80%;
+    max-width: 500px;
 
-#places {
-    /* padding: .5rem; */
+    h2 {
+        padding: 0;
+    }
+    p {
+        padding: .3rem .5rem .3rem .5rem;
+    }
+    button {
+        padding: .5rem;
+        border-radius: 20px;
+        background-color: var(--primary-color-primary);
+        color: var(--white-color);
+        cursor: var(--cursor-pointer);
+    }
 }
 .dialogDetails {
-    background-color: red;
+    background-color: var(--hover-background-card);
     padding: .5rem;
 }
 .place-card {
-    background-color: red;
-    padding: var(--point-five-col-gap);
+    display: var(--grid-display);
+    grid-template-areas: 
+        "name"
+        "pic"
+        "description"
+        "location"
+        "button";
+    border: 1px solid var(--black-color);
+    border-radius: 10px;
+    background-color: var(--hover-background-card);
+    /* padding: var(--point-five-col-gap); */
+    margin: .5rem;
+    margin-bottom: .5rem;
+    overflow: hidden;
 
     h2 {
         /* background-color: white; */
-        padding: 0;
+        padding: .7rem;
         margin-bottom: .3rem;
+        grid-area: name;
     }
     img {
         border: 1px solid var(--black-color);
+        grid-area: pic;
+        width: 100%;
     }
-    p {
-        margin-bottom: .3rem;
+
+    button {
+        grid-area: button;
+        padding: .7rem;
+        border-radius: 50px;
+        cursor: var(--cursor-pointer);
+        margin: 1rem;
+        background-color: var(--primary-color-primary);
+        color: var(--white-color);
+    }
+    .placeDescription {
+        grid-area: description;
+        padding: .7rem;
+    }
+    .placeAddress {
+        grid-area: location;
+        padding: .7rem;
+        font-style: italic;
     }
 }

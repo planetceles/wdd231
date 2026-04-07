@@ -11,6 +11,8 @@ const displayPlaces = (places) => {
         let pic = document.createElement("img");
         let button = document.createElement("button");
         card.classList.add("place-card");
+        description.classList.add("placeDescription");
+        address.classList.add("placeAddress");
 
         name.textContent = `${place.name}`;
         description.textContent = `${place.description}`;
