@@ -100,7 +100,7 @@ dialog {
         grid-area: name;
     }
     img {
-        border: 1px solid var(--black-color);
+        /* border: 1px solid var(--black-color); */
         grid-area: pic;
         width: 100%;
     }

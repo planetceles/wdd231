@@ -1,0 +1,35 @@
+@media only screen and (min-width: 38rem) {
+    .place-card {
+        display: var(--grid-display);
+        grid-template-areas: 
+            "name name"
+            "pic description"
+            "pic location"
+            "button button";
+
+        h2 {
+          
+            grid-area: name;
+        }
+        img {
+            /* border: 1px solid var(--black-color); */
+            grid-area: pic;
+            
+        }
+
+        button {
+            grid-area: button;
+            padding: .5rem;
+            margin: .6rem;
+           
+        }
+        .placeDescription {
+            grid-area: description;
+          
+        }
+        .placeAddress {
+            grid-area: location;
+           
+        }
+    }
+}
