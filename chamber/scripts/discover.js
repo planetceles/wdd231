@@ -10,9 +10,12 @@ const displayPlaces = (places) => {
         let address = document.createElement("p");
         let pic = document.createElement("img");
         let button = document.createElement("button");
+        let picCard = document.createElement("div");
         card.classList.add("place-card");
         description.classList.add("placeDescription");
         address.classList.add("placeAddress");
+        // pic.classList.add("placePic");
+        picCard.classList.add("placePicCard");
 
         name.textContent = `${place.name}`;
         description.textContent = `${place.description}`;
@@ -24,12 +27,15 @@ const displayPlaces = (places) => {
         pic.setAttribute("loading", "lazy");
 
         card.appendChild(name);
-        card.appendChild(pic);
+        // card.appendChild(pic);
+        picCard.appendChild(pic);
+        card.appendChild(picCard);
         card.appendChild(description);
         card.appendChild(address);
         card.appendChild(button);
 
         placesSection.appendChild(card);
+        // placesSection.appendChild(picCard)
     });
 }
 displayPlaces(places);

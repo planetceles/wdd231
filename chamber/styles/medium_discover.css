@@ -62,7 +62,7 @@
         img {
             /* border: 1px solid var(--black-color); */
             grid-area: pic;
-            transition: transform 0.4s ease;
+            
             
         }
 
@@ -84,4 +84,13 @@
     .place-card:hover img {
         transform: scale(1.1);
     }
+    .placePicCard {
+        overflow: hidden;
+
+        img {
+            /* border: 2px solid red; */
+            transition: transform 0.4s ease;
+        }
+    }
+    
 }
