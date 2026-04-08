@@ -51,6 +51,8 @@
     --one-rem-padding: 1rem;
 
     --h-border-radius: 8px
+    --zero-padding: 0;
+    --point-seven-padding: .7rem;
 }
 dialog {
     position: fixed;
@@ -66,7 +68,7 @@ dialog {
         padding: .3rem .5rem .3rem .5rem;
     }
     button {
-        padding: .5rem;
+        padding: var(--point-five-padding);
         border-radius: 20px;
         background-color: var(--primary-color-primary);
         color: var(--white-color);
@@ -75,7 +77,7 @@ dialog {
 }
 .dialogDetails {
     background-color: var(--hover-background-card);
-    padding: .5rem;
+    padding: var(--point-five-padding);
 }
 .place-card {
     display: var(--grid-display);
@@ -89,13 +91,13 @@ dialog {
     border-radius: 10px;
     background-color: var(--hover-background-card);
     /* padding: var(--point-five-col-gap); */
-    margin: .5rem;
+    margin: var(--point-five-margin);
     margin-bottom: .5rem;
     overflow: hidden;
 
     h2 {
         /* background-color: white; */
-        padding: .7rem;
+        padding: var(--point-seven-padding);
         margin-bottom: .3rem;
         grid-area: name;
     }
@@ -107,7 +109,7 @@ dialog {
 
     button {
         grid-area: button;
-        padding: .7rem;
+        padding: var(--point-seven-padding);
         border-radius: 50px;
         cursor: var(--cursor-pointer);
         margin: 1rem;
@@ -116,11 +118,11 @@ dialog {
     }
     .placeDescription {
         grid-area: description;
-        padding: .7rem;
+        padding: var(--point-seven-padding);
     }
     .placeAddress {
         grid-area: location;
-        padding: .7rem;
+        padding: var(--point-seven-padding);
         font-style: italic;
     }
 }
