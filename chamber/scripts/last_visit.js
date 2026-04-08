@@ -11,9 +11,9 @@ if (!lastVisit) {
     message = "Welcome! Let us know if you have any questions.";
 }
 else {
-    const daysDifference = now - Number(lastVisit);
+    const timeDifference = now - Number(lastVisit);
 
-    const timeDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+    const daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
 
     if (daysDifference < 1) {
         message = "Back so soon! Awesome!";
@@ -26,4 +26,7 @@ else {
     }
 }
 messageElement.textContent = message;
-localStorage.setItem("lastVisit", now);
+
+setTimeout(() => {
+    localStorage.setItem("lastVisit", now);    
+}, 1000);
