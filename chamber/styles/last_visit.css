@@ -54,7 +54,7 @@
     margin-right: .5rem;
     justify-self: end;
     font-style: italic;
-    border-bottom: 1px solid var(--primary-color-primary);
+    /* border-bottom: 1px solid var(--primary-color-primary); */
     animation: fadeIn 0.5s ease-in;
 }
 @keyframes fadeIn {
