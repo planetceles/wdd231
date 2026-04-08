@@ -43,7 +43,8 @@
 @media only screen and (min-width: 38rem) {
     main {
         width: var(--hundred-width);
-        max-width: 1100px;
+        /* max-width: 1100px; */
+        max-width: var(--ten-three-max-width);
         margin: var(--zero-auto-margin);
     }
 
