@@ -52,3 +52,4 @@ function showDialog(place) {
     myDialog.showModal();
 
 }
+

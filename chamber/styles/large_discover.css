@@ -2,6 +2,7 @@
     .place-card {
         display: var(--grid-display);
         grid-template-columns: 1fr 1fr;
+        gap: .5rem;
         
     }
 }

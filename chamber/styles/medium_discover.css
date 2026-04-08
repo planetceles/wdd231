@@ -1,4 +1,52 @@
+:root {
+    --header-font-family: "Merriweather", serif;
+    --body-font-family: "Gideon Roman", serif;
+
+    --primary-color-primary: #142252;
+    --hover-background-card: #f5e0e0;
+    --white-color: #ffffff;
+    --black-color: black;
+
+    --color-primary-dark: #1E3A8A;
+    --color-primary-light: #3B82F6;
+
+    --one_padding: 1rem;
+    --one_gap: 1rem;
+    --flex-display: flex;
+    --cursor-pointer: pointer;
+    --grid-display: grid;
+
+    --eight_border_radius: 8px;
+    --one_margin: 1rem;
+
+    --flex-direction: column;
+    --row-direction: row;
+    --list-style: none;
+    --four-padding: .4rem;
+    --text-decoration-none: none;
+    --center-align-items: center;
+    --display-block: block;
+    --display-none: none;
+    --left-margin: .5rem;
+    --text-align: center;
+
+    --border-none: none;
+    --hundred-width: 100%;
+    --zero-auto-margin: 0 auto;
+    /* --ten-three-max-width: 1023px; */
+    --ten-three-max-width: 1100px;
+    --point-five-col-gap: .5rem;
+    --flex-wrap: wrap;
+    --justify-content-around: space-around;
+    --justify-content-between: space-between;
+}
 @media only screen and (min-width: 38rem) {
+    main {
+        width: var(--hundred-width);
+        max-width: 1100px;
+        margin: var(--zero-auto-margin);
+    }
+
     .place-card {
         display: var(--grid-display);
         grid-template-areas: 
