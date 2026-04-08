@@ -33,55 +33,35 @@
     --border-none: none;
     --hundred-width: 100%;
     --zero-auto-margin: 0 auto;
-    /* --ten-three-max-width: 1023px; */
-    --ten-three-max-width: 1100px;
+    --ten-three-max-width: 1023px;
     --point-five-col-gap: .5rem;
     --flex-wrap: wrap;
     --justify-content-around: space-around;
     --justify-content-between: space-between;
+
+    --auto-height: auto;
+    --point-five-padding: .5rem;
+    --twelve-border-radius: 12px;
+    --point-five-margin: .5rem;
+    --one-rem-padding: 1rem;
+
+    --h-border-radius: 8px
 }
-@media only screen and (min-width: 38rem) {
-    main {
-        width: var(--hundred-width);
-        max-width: 1100px;
-        margin: var(--zero-auto-margin);
+.visit-message {
+    text-align: right;
+    color: var(--primary-color-primary);
+    padding-top: 10px;
+    margin-right: .5rem;
+    justify-self: end;
+    font-style: italic;
+    border-bottom: 1px solid var(--primary-color-primary);
+    animation: fadeIn 0.5s ease-in;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
     }
-
-    .place-card {
-        display: var(--grid-display);
-        grid-template-areas: 
-            "name name"
-            "pic description"
-            "pic location"
-            "button button";
-
-        h2 {
-          
-            grid-area: name;
-        }
-        img {
-            /* border: 1px solid var(--black-color); */
-            grid-area: pic;
-            transition: transform 0.4s ease;
-            
-        }
-
-        button {
-            grid-area: button;
-            padding: .5rem;
-            margin: .6rem;
-           
-        }
-        .placeDescription {
-            grid-area: description;
-          
-        }
-        .placeAddress {
-            grid-area: location;
-           
-        }
-    }
-    .place-card:hover img {
-        transform: scale(1.1);
+    to {
+        opacity: 1;
     }
 }
