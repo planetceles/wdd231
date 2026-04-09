@@ -4,17 +4,25 @@
     box-sizing: border-box;
 }
 :root {
-    --header-footer-color: #102A43;
+    --header-footer-color: #1E3A8A;
+    --hover-color: #F97316;
     --background-color: #F2F6FA;
+    --text-color: #111827;
+    
     --white: #FFFFFF;
     --black: #000000;
 
     --font-family: "DM Serif Display", serif;
     --second-font-family: "Lora", serif;
+    --code-font-family: "Google Sans Code", monospace;
+
+    /* --background-color: #F9FAFB; */
+    /* --header-footer-color: #102A43; */
 }
 header,
 footer {
     background-color: var(--header-footer-color);
+    /* background-color: #1E3A8A; */
     color: var(--white);
     font-family: var(--font-family);
     text-align: center;

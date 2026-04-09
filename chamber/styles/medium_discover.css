@@ -91,7 +91,7 @@
 
         img {
             /* border: 2px solid red; */
-            transition: transform 0.4s ease;
+            transition: transform .5s ease;
         }
     }
     
