@@ -1,0 +1,1 @@
+const navButton = document.querySelector("#nav-button");
