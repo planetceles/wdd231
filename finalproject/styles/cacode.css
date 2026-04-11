@@ -197,7 +197,8 @@ main {
         }
     }
 }
-@media only screen and (min-width:38rem) {
+/* button views on larger */
+@media only screen and (min-width:35rem) {
     main {
         .hero {
             .hero-button {

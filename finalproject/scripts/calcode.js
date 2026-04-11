@@ -1,7 +1,7 @@
-const navButton = document.querySelector("#nav-button");
-const navBar = document.querySelector("#nav-bar");
+import { features } from "../data/features.mjs";
 
-navButton.addEventListener("click", () => {
-    navButton.classList.toggle("show");
-    navBar.classList.toggle("show");
-});
+const featureSection = document.querySelector("#features-container");
+
+const displayFeathres = (features) => {
+    
+}
