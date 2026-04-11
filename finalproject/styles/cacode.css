@@ -86,7 +86,7 @@ header {
     .logo-ham {
         background-color: red;
         display: var(--grid-display);
-        grid-template-columns: auto 100px;
+        grid-template-columns: auto 50px;
     }
 }
 .logo {
