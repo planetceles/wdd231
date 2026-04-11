@@ -11,6 +11,7 @@ const displayFeatures = (features) => {
         let iconCard = document.createElement("div");
         card.classList.add("feature-card");
         iconCard.classList.add("icon-card");
+        description.classList.add("feature-description");
 
         title.textContent = `${feature.title}`;
         description.textContent = `${feature.description}`;

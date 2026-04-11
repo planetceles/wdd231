@@ -150,6 +150,11 @@ header {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 main {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    h1 {
+        margin: var(--point-five-margin);
+    }
     .hero {
         position: relative;
 
@@ -193,6 +198,39 @@ main {
             .button.secondary:hover {
                 background-color: var(--header-footer-color);
                 color: var(--white);
+            }
+        }
+    }
+    .features {
+        /* background-color: red; */
+        margin: var(--point-five-margin);
+
+        h2 {
+            margin-bottom: 1rem;
+            /* font-size: 2rem; */
+        }
+        .feature-card {
+            background-color: var(--white);
+            display: var(--grid-display);
+            grid-template-areas: 
+                "icon title"
+                "icon description"
+                ;
+            margin: 1rem;
+            padding: var(--point-five-padding);
+            border-radius: var(--h-border-radius);
+
+            h3 {
+                /* color: red; */
+                grid-area: title;
+            }
+            .icon-card {
+                /* background-color: red; */
+                grid-area: icon;
+            }
+            .feature-description {
+                /* color: red; */
+                grid-area: description;
             }
         }
     }
