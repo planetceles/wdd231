@@ -84,7 +84,7 @@ header {
     /* color: var(--white); */
 
     .logo-ham {
-        background-color: red;
+        /* background-color: red; */
         display: var(--grid-display);
         grid-template-columns: auto 50px;
     }
@@ -148,4 +148,40 @@ header {
 .hamburger.show::before {
     content: "\00D7";
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+main {
+    .hero {
+        position: relative;
+
+        img {
+            width: var(--hundred-width);
+            height: var(--auto-height);
+            display: var(--display-block);
+        }
+        .hero-button {
+            display: var(--flex-display);
+            column-gap: 10px;
+            /* background-color: red; */
+            position: absolute;
+            border: 1px solid red;
+            /* top: 75%; */
+            bottom: 5%;
+            left: 50%;
+            transform: translateX(-50%);
+            /* left: 50%; */
+            /* justify-self: center; */
+            /* align-self: center; */
+
+            a {
+                text-decoration: var(--text-decoration-none);
+            }
+            .button {
+                padding: 12px 24px;
+                border-radius: var(--h-border-radius);
+                font-weight: 600;
+                transition: .3s ease;
+                
+            }
+        }
+    }
 }
