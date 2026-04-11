@@ -75,7 +75,7 @@
     --point-five-margin: .5rem;
     --one-rem-padding: 1rem;
 
-    --h-border-radius: 8px
+    --h-border-radius: 8px;
     --zero-padding: 0;
     --point-seven-padding: .7rem;
 }
@@ -163,11 +163,11 @@ main {
             column-gap: 10px;
             /* background-color: red; */
             position: absolute;
-            border: 1px solid red;
+            /* border: 1px solid red; */
             /* top: 75%; */
             bottom: 5%;
-            left: 50%;
-            transform: translateX(-50%);
+            left: 5%;
+            /* transform: translateX(-50%); */
             /* left: 50%; */
             /* justify-self: center; */
             /* align-self: center; */
@@ -178,12 +178,20 @@ main {
             .button {
                 padding: 12px 24px;
                 border-radius: var(--h-border-radius);
+                /* border-radius: 8px; */
                 font-weight: 600;
                 transition: .3s ease;
                 
             }
             .button.primary {
                 background-color: var(--hover-color);
+                color: var(--white);
+            }
+            .button.secondary {
+                border: 2px solid var(--header-footer-color);
+            }
+            .button.secondary:hover {
+                background-color: var(--header-footer-color);
                 color: var(--white);
             }
         }
