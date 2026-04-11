@@ -166,8 +166,8 @@ main {
             border: 1px solid red;
             /* top: 75%; */
             bottom: 5%;
-            left: 50%;
-            transform: translateX(-50%);
+            /* left: 50%; */
+            /* transform: translateX(-50%); */
             /* left: 50%; */
             /* justify-self: center; */
             /* align-self: center; */
