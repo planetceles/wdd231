@@ -182,6 +182,10 @@ main {
                 transition: .3s ease;
                 
             }
+            .button.primary {
+                background-color: var(--hover-color);
+                color: var(--white);
+            }
         }
     }
 }
