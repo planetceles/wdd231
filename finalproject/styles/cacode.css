@@ -227,10 +227,12 @@ main {
             .icon-card {
                 /* background-color: red; */
                 grid-area: icon;
+                margin-right: .2rem;
             }
             .feature-description {
                 /* color: red; */
                 grid-area: description;
+                padding-top: .2rem;
             }
         }
     }
