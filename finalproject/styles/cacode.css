@@ -82,6 +82,12 @@
 header {
     background-color: var(--header-footer-color);
     /* color: var(--white); */
+
+    .logo-ham {
+        background-color: red;
+        display: var(--grid-display);
+        grid-template-columns: auto 100px;
+    }
 }
 .logo {
     a {
