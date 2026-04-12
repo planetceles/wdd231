@@ -12,7 +12,7 @@
       "rating": 4.7,
       "students": 1200,
       "price": "Free",
-      "instructor": "Dr. John Smith",
+      "instructor": "Celeste M. Mande",
       "skills": ["Equations", "Variables", "Problem Solving"],
       "objectives": [
         "Understand algebraic expressions",
@@ -38,7 +38,7 @@
       "rating": 4.6,
       "students": 950,
       "price": "$19",
-      "instructor": "Sarah Lee",
+      "instructor": "Celeste M. Mande",
       "skills": ["Angles", "Shapes", "Theorems"],
       "objectives": [
         "Identify geometric shapes",
@@ -64,7 +64,7 @@
       "rating": 4.9,
       "students": 800,
       "price": "$49",
-      "instructor": "Dr. Emily Carter",
+      "instructor": "Celeste M. Mande",
       "skills": ["Derivatives", "Integrals", "Optimization"],
       "objectives": [
         "Understand limits and continuity",
@@ -90,7 +90,7 @@
       "rating": 4.8,
       "students": 2000,
       "price": "Free",
-      "instructor": "Michael Brown",
+      "instructor": "Celeste M. Mande",
       "skills": ["Variables", "Functions", "DOM"],
       "objectives": [
         "Understand JavaScript basics",
@@ -116,7 +116,7 @@
       "rating": 4.7,
       "students": 1800,
       "price": "Free",
-      "instructor": "Anna White",
+      "instructor": "Celeste M. Mande",
       "skills": ["HTML", "CSS", "Responsive Design"],
       "objectives": [
         "Structure web pages",
@@ -142,7 +142,7 @@
       "rating": 4.8,
       "students": 1500,
       "price": "$29",
-      "instructor": "David Kim",
+      "instructor": "Celeste M. Mande",
       "skills": ["Python", "Automation", "Data"],
       "objectives": [
         "Write Python scripts",
@@ -168,7 +168,7 @@
       "rating": 4.9,
       "students": 900,
       "price": "$59",
-      "instructor": "James Wilson",
+      "instructor": "Celeste M. Mande",
       "skills": ["Algorithms", "Optimization", "Data Structures"],
       "objectives": [
         "Understand data structures",
@@ -194,7 +194,7 @@
       "rating": 4.7,
       "students": 1100,
       "price": "$25",
-      "instructor": "Laura Green",
+      "instructor": "Celeste M. Mande",
       "skills": ["Probability", "Data Analysis", "Distributions"],
       "objectives": [
         "Understand probability",
@@ -220,7 +220,7 @@
       "rating": 4.8,
       "students": 1300,
       "price": "$39",
-      "instructor": "Chris Adams",
+      "instructor": "Celeste M. Mande",
       "skills": ["React", "Components", "State"],
       "objectives": [
         "Build React apps",
@@ -246,7 +246,7 @@
       "rating": 4.9,
       "students": 700,
       "price": "$45",
-      "instructor": "Dr. Alan Moore",
+      "instructor": "Celeste M. Mande",
       "skills": ["Matrices", "Vectors", "Transformations"],
       "objectives": [
         "Understand vectors",
