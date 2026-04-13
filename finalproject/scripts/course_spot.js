@@ -1,11 +1,12 @@
 const url = "https://planetceles.github.io/wdd231/finalproject/data/courses.json";
-const cards = document.querySelector("#course-spot");
+const spotCards = document.querySelector("#course-spotlight");
 
 async function getCourseSpotLight() {
     try {
         const response = await fetch(url);
         const data = await response.json();
 
+        // console.log(data);
         displayCourseSpot(data.courses);
     }
     catch (error) {
@@ -33,5 +34,19 @@ const displayCourseSpot = (courses) => {
     selected.forEach((spot) => {
         let card = document.createElement("div");
         card.classList.add("spot-card");
-    })
+
+        let title = document.createElement("h3");
+        let category = document.createElement("p");
+        let description = document.createElement("p");
+
+        title.textContent = spot.title;
+        category.innerHTML = `<strong>Course Type: ${spot.category}</strong>`;
+        description.textContent = spot.description;
+
+        card.appendChild(title);
+        card.appendChild(category);
+        card.appendChild(description);
+
+        spotCards.appendChild(card);
+    });
 }

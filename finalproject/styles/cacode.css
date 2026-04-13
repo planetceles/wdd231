@@ -249,3 +249,34 @@ main {
         
     }
 }
+
+.spot-title {
+    /* background-color: red; */
+
+    h2 {
+        margin: var(--point-five-margin);
+        /* padding-left: .3rem; */
+    }
+}
+
+/* spot cards */
+.course-spotlight {
+    
+    /* background-color: red; */
+
+    .spot-card {
+        background-color: var(--white);
+        padding: var(--point-five-padding);
+        border-radius: var(--h-border-radius);
+        margin: 1rem;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+        transition: .3s ease;
+
+        h3 {
+            margin-bottom: .3rem;
+        }
+    }
+    .spot-card:hover {
+        transform: translateY(-5px);
+    }
+}
