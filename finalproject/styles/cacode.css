@@ -280,3 +280,15 @@ main {
         transform: translateY(-5px);
     }
 }
+footer {
+    background-color: var(--header-footer-color);
+    color: var(--white);
+    padding: var(--point-five-padding);
+
+    .cal-address {
+        img {
+            width: 150px;
+            height: 50px;
+        }
+    }
+}
