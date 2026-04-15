@@ -286,7 +286,27 @@ footer {
     padding: var(--point-five-padding);
 
     .cal-address {
+        grid-template-areas: 
+            "image title"
+            "image road"
+            "image street"
+            ;
+
+        strong {
+            color: red;
+            grid-area: title;
+        }
+        .road {
+            color: red;
+            grid-area: road;
+        }
+        .street {
+            color: red;
+            grid-area: street;
+        }
+
         img {
+            grid-area: image;
             width: 150px;
             height: 50px;
         }
