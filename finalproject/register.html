@@ -23,10 +23,12 @@
     <link rel="stylesheet" href="styles/footer_calcode.css">
     <link rel="stylesheet" href="styles/calcode_larger.css">
     <link rel="stylesheet" href="styles/register.css">
+    <link rel="stylesheet" href="styles/last_visit.css">
     <script type="module" src="scripts/calcode.js"></script>
     <script src="scripts/dates_navigation.js" defer></script>
     <script src="scripts/course_spot.js" defer></script>
     <script src="scripts/register.js" defer></script>
+    <script src="scripts/last_visit.js" defer></script>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Cormorant:ital,wght@0,300..700;1,300..700&family=DM+Serif+Display:ital@0;1&family=DM+Serif+Text:ital@0;1&family=Edu+SA+Hand:wght@400..700&family=Fira+Code:wght@300..700&family=Gideon+Roman&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link rel="icon" href="images/favicon.ico">
@@ -63,19 +65,19 @@
                 </fieldset>
 
                 <fieldset>
-                <legend>Membership</legend>
-                <label>Courses<span class="red">*</span> <select name="memberLevel" id="memberLevel" required>
+                <legend>Courses</legend>
+                <label>Course To Register<span class="red">*</span> <select name="coursesChoice" id="coursesChoice" required>
                     <option disabled selected value="">Select Your Course...</option>
-                    <option value="alg">algebra-fundamentals</option>
-                    <option value="geo">Geometry Essentials</option>
-                    <option value="calculus">Advanced Calculus</option>
-                    <option value="jsc">JavaScript for Beginners</option>
-                    <option value="html">HTML & CSS Mastery</option>
-                    <option value="py">Python Programming</option>
-                    <option value="data">Data Structures & Algorithms</option>
-                    <option value="stat">Statistics for Data Science</option>
-                    <option value="react">React Development</option>
-                    <option value="linear">Linear Algebra</option>
+                    <option value="algebra-fundamentals">algebra-fundamentals</option>
+                    <option value="Geometry Essentials">Geometry Essentials</option>
+                    <option value="Advanced Calculus">Advanced Calculus</option>
+                    <option value="JavaScript for Beginners">JavaScript for Beginners</option>
+                    <option value="HTML & CSS Mastery">HTML & CSS Mastery</option>
+                    <option value="Python Programming">Python Programming</option>
+                    <option value="Data Structures & Algorithms">Data Structures & Algorithms</option>
+                    <option value="Statistics for Data Science">Statistics for Data Science</option>
+                    <option value="React Development">React Development</option>
+                    <option value="Linear Algebra">Linear Algebra</option>
                 </select> </label>
                 <label><input type="hidden" name="timestamp" id="timestamp"></label>
             </fieldset>
@@ -123,6 +125,9 @@
         </div>
 
         <div class="cal-code">
+            <div id="visit-message" class="visit-message">
+                
+            </div>
             <p>&copy;<span id="current-year"></span>CalcCode</p>
             <p><span id="last-modified"></span></p>
         </div>
