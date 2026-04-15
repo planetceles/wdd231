@@ -151,6 +151,10 @@
         
     }
     footer {
+        display: var(--flex-display);
+        justify-content: var(--justify-content-around);
+        align-items: var(--center-align-items);
+
         .cal-address {
             /* color: red; */
             /* column-gap: .4rem; */

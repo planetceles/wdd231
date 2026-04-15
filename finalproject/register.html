@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CalcCode | Home Page</title>
+    <title>CalcCode | Register</title>
     <meta name="author" content="Celeste M. Mande">
     <meta name="description" content="Learn math and coding with interactive lessons, step-by-step explanations, and real-world projects. Build skills, track progress, and succeed.">
     <meta name="keywords" content="learn math, learn coding,programming courses, algebra, JavaScript, coding for beginners">
@@ -22,9 +22,11 @@
     <link rel="stylesheet" href="styles/cacode.css">
     <link rel="stylesheet" href="styles/footer_calcode.css">
     <link rel="stylesheet" href="styles/calcode_larger.css">
+    <link rel="stylesheet" href="styles/register.css">
     <script type="module" src="scripts/calcode.js"></script>
     <script src="scripts/dates_navigation.js" defer></script>
     <script src="scripts/course_spot.js" defer></script>
+    <script src="scripts/register.js" defer></script>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Cormorant:ital,wght@0,300..700;1,300..700&family=DM+Serif+Display:ital@0;1&family=DM+Serif+Text:ital@0;1&family=Edu+SA+Hand:wght@400..700&family=Fira+Code:wght@300..700&family=Gideon+Roman&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link rel="icon" href="images/favicon.ico">
@@ -42,51 +44,58 @@
         
         <nav id="nav-bar" class="navigation">
                 <ul>
-                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="courses.html">Courses</a></li>
-                    <li><a href="register.html">Register</a></li>
+                    <li class="current"><a href="register.html">Register</a></li>
                 </ul>
         </nav>
     </header>
     <main>
-        <section class="hero">
-            <picture>
-                <source media="(min-width: 1000px)" src="images/equation.webp">
-                <source media="(min-width: 500px)" src="images/equation.webp">
-                <img src="images/equation.webp" alt="Equations & Logic" width="500" height="250">
-            </picture>
+        <h1>Register Courses</h1>
+        <section>
+            <form method="get" action="thankyou.html" class="join-class">
+                <fieldset>
+                <legend>Personal Information</legend>
+                    <label>First Name<span class="red">*</span> <input type="text" name="fname" required autocomplete="given-name" title="Your First Name"></label>
+                    <label>Last Name<span class="red">*</span> <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+                    <label>Email<span class="red">*</span> <input type="email" name="email" required placeholder="youremail@gmail.com" autocomplete="email" title="Your Email"></label>
+                    <label>Phone Number<span class="red">*</span> <input type="tel" name="phone" required placeholder="123-456-7890" autocomplete="tel" title="Your Phone Number"></label>
+                </fieldset>
 
-            <div class="hero-button">
-                <a href="register.html" class="button primary">Start Learning</a>
-                <a href="courses.html" class="button secondary">Explore Courses</a>
+                <fieldset>
+                <legend>Membership</legend>
+                <label>Courses<span class="red">*</span> <select name="memberLevel" id="memberLevel" required>
+                    <option disabled selected value="">Select Your Course...</option>
+                    <option value="alg">algebra-fundamentals</option>
+                    <option value="geo">Geometry Essentials</option>
+                    <option value="calculus">Advanced Calculus</option>
+                    <option value="jsc">JavaScript for Beginners</option>
+                    <option value="html">HTML & CSS Mastery</option>
+                    <option value="py">Python Programming</option>
+                    <option value="data">Data Structures & Algorithms</option>
+                    <option value="stat">Statistics for Data Science</option>
+                    <option value="react">React Development</option>
+                    <option value="linear">Linear Algebra</option>
+                </select> </label>
+                <label><input type="hidden" name="timestamp" id="timestamp"></label>
+            </fieldset>
+            <button type="submit">Register Course</button>
+            </form>
+
+            <div class="info">
+                <h2>Courses Information</h2>
+                <div id="course-info" class="course-info"></div>
+                <dialog id="myDialog">
+                    <div class="dialog-close">
+                        <h2></h2>
+                        <button>X</button>
                 
+                    </div>
+                    <h3></h3>
+                    <p></p>
+                </dialog>
             </div>
         </section>
-
-        <h1>Home</h1>
-
-        <section class="features">
-            <div class="features-header">
-                <h2>Powerful Features to Accelerate Your Learning</h2>
-            </div>
-            <div class="all-features">
-                <p>Unlock your full potential with tools built for speed, retention, and clarity. From smart flashcards and adaptive quizzes to real-time progress tracking and AI-powered summaries, every feature is designed to help you grasp concepts faster and remember them longer. Whether you're mastering a new language or preparing for an exam, these powerful capabilities turn study time into results—without the overwhelm.</p>
-                <div id="features-container" class="features-list">
-
-            </div>
-            </div>
-            
-        </section>
-
-        <div class="spot-title">
-            <h2>Essential Courses</h2>
-        </div>
-        
-        <section id="course-spotlight" class="course-spotlight">
-            
-        </section>
-
-        
     </main>
     <footer>
         <div class="cal-address">

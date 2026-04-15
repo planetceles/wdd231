@@ -1,0 +1,314 @@
+const coursesInfo = [
+    {
+        id: "algebra-fundamentals",
+        title: "Algebra Fundamentals",
+        category: "Math",
+        level: "Beginner",
+        description: "Learn the basics of algebra including equations, variables, and problem-solving techniques.",
+        image: "images/algebra.jpg",
+        duration: "4 weeks",
+        lessons: 20,
+        rating: 4.7,
+        students: 1200,
+        price: "Free",
+        instructor: "Celeste M. Mande",
+        skills: ["Equations", "Variables", "Problem Solving"],
+        objectives: [
+            "Understand algebraic expressions",
+            "Solve linear equations",
+            "Apply algebra to real-world problems"
+        ],
+        syllabus: [
+            "Introduction to Algebra",
+            "Variables and Expressions",
+            "Linear Equations",
+            "Word Problems"
+        ]
+    },
+    {
+        id: "geometry-essentials",
+        title: "Geometry Essentials",
+        category: "Math",
+        level: "Beginner",
+        description: "Understand shapes, angles, and theorems with practical examples.",
+        image: "images/geometry.jpg",
+        duration: "3 weeks",
+        lessons: 18,
+        rating: 4.6,
+        students: 950,
+        price: "$19",
+        instructor: "Celeste M. Mande",
+        skills: ["Angles", "Shapes", "Theorems"],
+        objectives: [
+            "Identify geometric shapes",
+            "Understand angle relationships",
+            "Apply geometric theorems"
+        ],
+        syllabus: [
+            "Basic Shapes",
+            "Angles",
+            "Triangles",
+            "Circles"
+        ]
+    },
+    {
+        id: "advanced-calculus",
+        title: "Advanced Calculus",
+        category: "Math",
+        level: "Advanced",
+        description: "Master derivatives, integrals, and real-world calculus applications.",
+        image: "images/calculus.jpg",
+        duration: "6 weeks",
+        lessons: 30,
+        rating: 4.9,
+        students: 800,
+        price: "$49",
+        instructor: "Celeste M. Mande",
+        skills: ["Derivatives", "Integrals", "Optimization"],
+        objectives: [
+            "Understand limits and continuity",
+            "Master derivatives",
+            "Apply integrals to real problems"
+        ],
+        syllabus: [
+            "Limits",
+            "Derivatives",
+            "Integrals",
+            "Applications"
+        ]
+    },
+    {
+        id: "javascript-beginners",
+        title: "JavaScript for Beginners",
+        category: "Coding",
+        level: "Beginner",
+        description: "Start coding with JavaScript and build interactive web applications.",
+        image: "images/js.jpg",
+        duration: "5 weeks",
+        lessons: 25,
+        rating: 4.8,
+        students: 2000,
+        price: "Free",
+        instructor: "Celeste M. Mande",
+        skills: ["Variables", "Functions", "DOM"],
+        objectives: [
+            "Understand JavaScript basics",
+            "Manipulate web pages",
+            "Build small applications"
+        ],
+        syllabus: [
+            "Intro to JS",
+            "Variables",
+            "Functions",
+            "DOM Manipulation"
+        ]
+    },
+    {
+        id: "html-css-mastery",
+        title: "HTML & CSS Mastery",
+        category: "Coding",
+        level: "Beginner",
+        description: "Design beautiful and responsive websites from scratch.",
+        image: "images/htmlcss.jpg",
+        duration: "4 weeks",
+        lessons: 22,
+        rating: 4.7,
+        students: 1800,
+        price: "Free",
+        instructor: "Celeste M. Mande",
+        skills: ["HTML", "CSS", "Responsive Design"],
+        objectives: [
+            "Structure web pages",
+            "Style with CSS",
+            "Build responsive layouts"
+        ],
+        syllabus: [
+            "HTML Basics",
+            "CSS Styling",
+            "Flexbox & Grid",
+            "Responsive Design"
+        ]
+    },
+    {
+        id: "python-programming",
+        title: "Python Programming",
+        category: "Coding",
+        level: "Intermediate",
+        description: "Learn Python for data analysis, automation, and backend development.",
+        image: "images/python.jpg",
+        duration: "6 weeks",
+        lessons: 28,
+        rating: 4.8,
+        students: 1500,
+        price: "$29",
+        instructor: "Celeste M. Mande",
+        skills: ["Python", "Automation", "Data"],
+        objectives: [
+            "Write Python scripts",
+            "Automate tasks",
+            "Work with data"
+        ],
+        syllabus: [
+            "Python Basics",
+            "Functions",
+            "File Handling",
+            "Data Processing"
+        ]
+    },
+    {
+        id: "dsa",
+        title: "Data Structures & Algorithms",
+        category: "Coding",
+        level: "Advanced",
+        description: "Master problem-solving and optimize your coding skills.",
+        image: "images/dsa.jpg",
+        duration: "8 weeks",
+        lessons: 35,
+        rating: 4.9,
+        students: 900,
+        price: "$59",
+        instructor: "Celeste M. Mande",
+        skills: ["Algorithms", "Optimization", "Data Structures"],
+        objectives: [
+            "Understand data structures",
+            "Solve complex problems",
+            "Optimize code performance"
+        ],
+        syllabus: [
+            "Arrays",
+            "Linked Lists",
+            "Trees",
+            "Algorithms"
+        ]
+    },
+    {
+        id: "statistics",
+        title: "Statistics for Data Science",
+        category: "Math",
+        level: "Intermediate",
+        description: "Understand probability, distributions, and data interpretation.",
+        image: "images/statistics.jpg",
+        duration: "5 weeks",
+        lessons: 24,
+        rating: 4.7,
+        students: 1100,
+        price: "$25",
+        instructor: "Celeste M. Mande",
+        skills: ["Probability", "Data Analysis", "Distributions"],
+        objectives: [
+            "Understand probability",
+            "Analyze data",
+            "Interpret results"
+        ],
+        syllabus: [
+            "Probability",
+            "Distributions",
+            "Sampling",
+            "Data Analysis"
+        ]
+    },
+    {
+        id: "react-dev",
+        title: "React Development",
+        category: "Coding",
+        level: "Intermediate",
+        description: "Build modern web apps using React and component-based architecture.",
+        image: "images/react.jpg",
+        duration: "6 weeks",
+        lessons: 26,
+        rating: 4.8,
+        students: 1300,
+        price: "$39",
+        instructor: "Celeste M. Mande",
+        skills: ["React", "Components", "State"],
+        objectives: [
+            "Build React apps",
+            "Manage state",
+            "Create reusable components"
+        ],
+        syllabus: [
+            "React Basics",
+            "Components",
+            "State & Props",
+            "Hooks"
+        ]
+    },
+    {
+        id: "linear-algebra",
+        title: "Linear Algebra",
+        category: "Math",
+        level: "Advanced",
+        description: "Explore matrices, vectors, and transformations in depth.",
+        image: "images/linear.jpg",
+        duration: "7 weeks",
+        lessons: 32,
+        rating: 4.9,
+        students: 700,
+        price: "$45",
+        instructor: "Celeste M. Mande",
+        skills: ["Matrices", "Vectors", "Transformations"],
+        objectives: [
+            "Understand vectors",
+            "Work with matrices",
+            "Apply transformations"
+        ],
+        syllabus: [
+            "Vectors",
+            "Matrices",
+            "Eigenvalues",
+            "Transformations"
+        ]
+    }
+];
+
+const courseInfoDet = document.querySelector("#course-info");
+const myDialog = document.querySelector("#myDialog");
+const courseHeading = document.querySelector("#myDialog h2");
+const detail = document.querySelector("#myDialog h3");
+const courseSkills = document.querySelector("#myDialog p");
+const closeButton = document.querySelector("#myDialog button");
+
+// closeButton.addEventListener("click", () => {
+//     myDialog.close();
+// });
+
+if (closeButton && myDialog) {
+    closeButton.addEventListener("click", () => {
+        myDialog.close();
+    });
+}
+
+function displayCourseInfo(courses) {
+    courses.forEach(infos => {
+        const card = document.createElement("div");
+        
+        const title = document.createElement("h3");
+        const description = document.createElement("p");
+        const button = document.createElement("button");
+
+        card.classList.add("course-info-card");
+
+        title.textContent = `${infos.title}`;
+        description.textContent = `${infos.description}`;
+        button.textContent = "See Course Details";
+        button.addEventListener('click', () => showDialogInfo(infos));
+
+        card.appendChild(title);
+        card.appendChild(description);
+        card.appendChild(button);
+
+        courseInfoDet.appendChild(card);
+    });
+}
+displayCourseInfo(coursesInfo);
+
+// show dialog information
+function showDialogInfo(infos) {
+    courseHeading.innerHTML = infos.title;
+    detail.innerHTML = `Skills Developed`;
+    courseSkills.innerHTML = infos.skills.join(", ");
+    myDialog.showModal();
+}
+
+// timestamp
+document.querySelector("#timestamp").value = new Date().toISOString();

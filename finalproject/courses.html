@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CalcCode | Home Page</title>
+    <title>CalcCode | Courses</title>
     <meta name="author" content="Celeste M. Mande">
     <meta name="description" content="Learn math and coding with interactive lessons, step-by-step explanations, and real-world projects. Build skills, track progress, and succeed.">
     <meta name="keywords" content="learn math, learn coding,programming courses, algebra, JavaScript, coding for beginners">
@@ -22,9 +22,11 @@
     <link rel="stylesheet" href="styles/cacode.css">
     <link rel="stylesheet" href="styles/footer_calcode.css">
     <link rel="stylesheet" href="styles/calcode_larger.css">
+    <link rel="stylesheet" href="styles/courses.css">
     <script type="module" src="scripts/calcode.js"></script>
     <script src="scripts/dates_navigation.js" defer></script>
     <script src="scripts/course_spot.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Birthstone&family=Cormorant:ital,wght@0,300..700;1,300..700&family=DM+Serif+Display:ital@0;1&family=DM+Serif+Text:ital@0;1&family=Edu+SA+Hand:wght@400..700&family=Fira+Code:wght@300..700&family=Gideon+Roman&family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lora:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 <link rel="icon" href="images/favicon.ico">
@@ -42,51 +44,19 @@
         
         <nav id="nav-bar" class="navigation">
                 <ul>
-                    <li class="current"><a href="index.html">Home</a></li>
-                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="current"><a href="courses.html">Courses</a></li>
                     <li><a href="register.html">Register</a></li>
                 </ul>
         </nav>
     </header>
     <main>
-        <section class="hero">
-            <picture>
-                <source media="(min-width: 1000px)" src="images/equation.webp">
-                <source media="(min-width: 500px)" src="images/equation.webp">
-                <img src="images/equation.webp" alt="Equations & Logic" width="500" height="250">
-            </picture>
+        <section class="courses">
+            <h1>Our Courses</h1>
+            <div id="course" class="course">
 
-            <div class="hero-button">
-                <a href="register.html" class="button primary">Start Learning</a>
-                <a href="courses.html" class="button secondary">Explore Courses</a>
-                
             </div>
         </section>
-
-        <h1>Home</h1>
-
-        <section class="features">
-            <div class="features-header">
-                <h2>Powerful Features to Accelerate Your Learning</h2>
-            </div>
-            <div class="all-features">
-                <p>Unlock your full potential with tools built for speed, retention, and clarity. From smart flashcards and adaptive quizzes to real-time progress tracking and AI-powered summaries, every feature is designed to help you grasp concepts faster and remember them longer. Whether you're mastering a new language or preparing for an exam, these powerful capabilities turn study time into results—without the overwhelm.</p>
-                <div id="features-container" class="features-list">
-
-            </div>
-            </div>
-            
-        </section>
-
-        <div class="spot-title">
-            <h2>Essential Courses</h2>
-        </div>
-        
-        <section id="course-spotlight" class="course-spotlight">
-            
-        </section>
-
-        
     </main>
     <footer>
         <div class="cal-address">
