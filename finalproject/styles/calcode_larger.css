@@ -1,0 +1,196 @@
+:root {
+    --header-footer-color: #1E3A8A;
+    --hover-color: #F97316;
+    --background-color: #F2F6FA;
+    --text-color: #111827;
+    
+    --white: #FFFFFF;
+    --black: #000000;
+
+    --font-family: "DM Serif Display", serif;
+    --second-font-family: "Lora", serif;
+    --code-font-family: "Google Sans Code", monospace;
+
+    /* --background-color: #F9FAFB; */
+    /* --header-footer-color: #102A43; */
+
+    --shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+    --one_padding: 1rem;
+    --one_gap: 1rem;
+    --flex-display: flex;
+    --cursor-pointer: pointer;
+    --grid-display: grid;
+
+    --eight_border_radius: 8px;
+    --one_margin: 1rem;
+
+    /* --flex-direction: column; */
+    --list-style: none;
+    --four-padding: .4rem;
+    --text-decoration-none: none;
+    --align-items: center;
+    --display-block: block;
+    --display-none: none;
+    --left-margin: .5rem;
+
+    /* new */
+    --one_padding: 1rem;
+    --one_gap: 1rem;
+    --flex-display: flex;
+    --cursor-pointer: pointer;
+    --grid-display: grid;
+
+    --eight_border_radius: 8px;
+    --one_margin: 1rem;
+
+    --column-flex-direction: column;
+    --row-direction: row;
+    --none-list-style: none;
+    --four-padding: .4rem;
+    --text-decoration-none: none;
+    --center-align-items: center;
+    --display-block: block;
+    --display-none: none;
+    --left-margin: .5rem;
+    --text-align: center;
+
+    --border-none: none;
+    --hundred-width: 100%;
+    --zero-auto-margin: 0 auto;
+    --ten-three-max-width: 1023px;
+    --point-five-col-gap: .5rem;
+    --flex-wrap: wrap;
+    --justify-content-around: space-around;
+    --justify-content-between: space-between;
+
+    --auto-height: auto;
+    --point-five-padding: .5rem;
+    --twelve-border-radius: 12px;
+    --point-five-margin: .5rem;
+    --one-rem-padding: 1rem;
+
+    --h-border-radius: 8px;
+    --zero-padding: 0;
+    --point-seven-padding: .7rem;
+}
+@media only screen and (min-width:38rem) {
+    header {
+        display: var(--flex-display);
+        justify-content: var(--justify-content-around);
+        align-items: var(--center-align-items);
+
+        .hamburger {
+            display: var(--display-none);
+        }
+        .navigation {
+            display: var(--display-block);
+
+            ul {
+                display: var(--flex-display);
+                flex-direction: var(--row-direction);
+
+                li {
+                    a {
+                        display: var(--display-block);
+                        border: var(--border-none);
+                    }
+                }
+            }
+        }
+    }
+    main {
+        .hero {
+            width: var(--hundred-width);
+            max-width: 1100px;
+            margin: var(--zero-auto-margin);
+        }
+        h1 {
+            max-width: var(--ten-three-max-width);
+            margin: var(--zero-auto-margin);
+            padding: .5rem 0rem .2rem 0rem;
+
+        }
+        .features,
+        .course-spotlight {
+            /* display: var(--flex-display); */
+            /* color: red; */
+            width: var(--hundred-width);
+            max-width: var(--ten-three-max-width);
+            margin: var(--zero-auto-margin);
+        }
+        /* .feature-card { */
+            /* display: var(--grid-display); */
+            /* grid-template-columns: auto 350px 300px; */
+            /* width: 600px; */
+        /* } */
+        .all-features {
+            /* color: green; */
+            display: var(--grid-display);
+            grid-template-columns: 300px auto;
+            column-gap: 2rem;
+            align-items: center;
+        }
+        .spot-title {
+            /* background-color: red; */
+            max-width: var(--ten-three-max-width);
+            margin: var(--zero-auto-margin);
+            
+            h2 {
+                /* padding: 0; */
+                margin: 0;
+            }
+        }
+        .spot-card {
+            /* color: red; */
+            transition: .3s ease;
+        }
+        .spot-card:hover {
+            transform: translateY(-5px);
+        }
+        
+    }
+    footer {
+        .cal-address {
+            /* color: red; */
+            /* column-gap: .4rem; */
+            grid-template-areas: 
+            "logo"
+            "title"
+            "road"
+            "street"
+            ;
+            margin-bottom: 1rem;
+            .title {
+            grid-area: title;
+            }
+            .road {
+                grid-area: road;
+            }
+            .street {
+                grid-area: street;
+            }
+            .logo {
+                grid-area: logo;
+            }
+            }
+        .social {
+            padding: 0;
+
+            ul {
+                column-gap: .9rem;
+
+                li {
+                    a {
+                        img {
+                            width: 44px;
+                            height: 44px;
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+    
+}
