@@ -1,0 +1,137 @@
+:root {
+    --header-footer-color: #1E3A8A;
+    --hover-color: #F97316;
+    --background-color: #F2F6FA;
+    --text-color: #111827;
+    
+    --white: #FFFFFF;
+    --black: #000000;
+
+    --font-family: "DM Serif Display", serif;
+    --second-font-family: "Lora", serif;
+    --code-font-family: "Google Sans Code", monospace;
+
+    /* --background-color: #F9FAFB; */
+    /* --header-footer-color: #102A43; */
+
+    --shadow-soft: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+    --one_padding: 1rem;
+    --one_gap: 1rem;
+    --flex-display: flex;
+    --cursor-pointer: pointer;
+    --grid-display: grid;
+
+    --eight_border_radius: 8px;
+    --one_margin: 1rem;
+
+    /* --flex-direction: column; */
+    --list-style: none;
+    --four-padding: .4rem;
+    --text-decoration-none: none;
+    --align-items: center;
+    --display-block: block;
+    --display-none: none;
+    --left-margin: .5rem;
+
+    /* new */
+    --one_padding: 1rem;
+    --one_gap: 1rem;
+    --flex-display: flex;
+    --cursor-pointer: pointer;
+    --grid-display: grid;
+
+    --eight_border_radius: 8px;
+    --one_margin: 1rem;
+
+    --column-flex-direction: column;
+    --row-direction: row;
+    --none-list-style: none;
+    --four-padding: .4rem;
+    --text-decoration-none: none;
+    --center-align-items: center;
+    --display-block: block;
+    --display-none: none;
+    --left-margin: .5rem;
+    --text-align: center;
+
+    --border-none: none;
+    --hundred-width: 100%;
+    --zero-auto-margin: 0 auto;
+    --ten-three-max-width: 1023px;
+    --point-five-col-gap: .5rem;
+    --flex-wrap: wrap;
+    --justify-content-around: space-around;
+    --justify-content-between: space-between;
+
+    --auto-height: auto;
+    --point-five-padding: .5rem;
+    --twelve-border-radius: 12px;
+    --point-five-margin: .5rem;
+    --one-rem-padding: 1rem;
+
+    --h-border-radius: 8px;
+    --zero-padding: 0;
+    --point-seven-padding: .7rem;
+}
+footer {
+    background-color: var(--header-footer-color);
+    color: var(--white);
+    padding: var(--point-five-padding);
+
+    .cal-address {
+        display: var(--grid-display);
+        grid-template-areas: 
+            "logo title"
+            "logo road"
+            "logo street"
+            ;
+
+        .title {
+            color: red;
+            grid-area: title;
+        }
+        .road {
+            color: red;
+            grid-area: road;
+        }
+        .street {
+            color: red;
+            grid-area: street;
+        }
+        .logo {
+            grid-area: logo;
+        }
+
+        img {
+            /* grid-area: logo; */
+            width: 150px;
+            height: 50px;
+        }
+    }
+    .social {
+        padding: var(--one-rem-padding);
+        
+        ul {
+            display: var(--flex-display);
+            justify-content: var(--justify-content-around);
+            list-style: var(--list-style);
+
+
+            li {
+                a {
+                    text-decoration: var(--text-decoration-none);
+                    cursor: var(--cursor-pointer);
+
+                    img {
+                        width: 62px;
+                        height: 62px;
+                    }
+                }
+            }
+        }
+    }
+    .cal-code {
+        text-align: center;
+    }
+}
