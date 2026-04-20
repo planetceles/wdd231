@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --header-footer-color: purple;
+    --background-color: #F5F0FA;
+    --text-color: #2D2D2D;
+    
+    --white: #FFFFFF;
+
+    --font-family: "DM Serif Display", serif;
+    --second-font-family: "Lora", serif;
+
+    --one_padding: 1rem;
+    --one_gap: 1rem;
+    --one_margin: 1rem;
+    --eight_border_radius: 8px;
+    --point-four-padding: .4rem;
+    --point-five-margin: .5rem;
+
+    --flex-display: flex;
+    --grid-display: grid;
+    --display-block: block;
+    --display-none: none;
+
+    --column-flex-direction: column;
+    --row-direction: row;
+    --flex-wrap: wrap;
+    --justify-content-around: space-around;
+    --justify-content-between: space-between;
+
+    --cursor-pointer: pointer;
+    --list-style: none;
+    --text-decoration-none: none;
+    --none-list-style: none;
+    --center-align-items: center;
+    --text-align: center;
+    --border-none: none;
+    --hundred-width: 100%;
+    --auto-height: auto;
+    --zero-auto-margin: 0 auto;
+   
+   
+    
+    /* others */
+    --ten-three-max-width: 1023px;
+    --point-five-col-gap: .5rem;
+    --point-five-padding: .5rem;
+    --twelve-border-radius: 12px;
+    --h-border-radius: 8px;
+    --zero-padding: 0;
+    --point-seven-padding: .7rem;
+}
